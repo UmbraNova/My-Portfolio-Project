@@ -1,0 +1,33 @@
+body {
+    /* background: url(./assets/images/alexander-ant-EHlp8e-nQ3g-unsplash.jpg) no-repeat center center fixed; */
+    /* background: url(./assets/images/risto-kokkonen-OELJMl0ZDh8-unsplash.jpg) no-repeat center center fixed; */
+    /* background: url(./assets/images/vackground-com--ylEAG7OrvI-unsplash.jpg) no-repeat center center fixed; */
+    background: url(./assets/images/milad-fakurian-YvYwTHcXaxI-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+nav {
+    background-color: black;
+}
+
+.contact-me-btn {
+    min-width: 170px;
+}
+
+.rating-stars {
+    width: 20px;
+}
+
+.rating-text {
+    font-size: 12px;
+}
+
+.box-shadow img {
+    border-radius: 5px;
+}
+
+.box-shadow {
+    background-color: black
+}
+
+

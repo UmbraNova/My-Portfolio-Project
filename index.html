@@ -1,118 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+<!-- <html lang="en" data-bs-theme="light"> -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/a56996e6e8.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: bisque;
-    }
-
-
-    /* header li img {
-      filter: invert();
-    }
-
-    header li:hover {
-      background-color: grey;
-    }
-
-    header > div {
-      background-color: rgb(0, 0, 0);
-    }
-
-    .socialIconLink {
-    color: #e9e9e9;
-    font-size: 34px;
-  }
-
-  .socialIcons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 240px;
-  } */
-
-  nav {
-    background-color: black;
-  }
-
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Offcanvas navbar large">
-    <div class="container-fluid">
-      <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-        <img src="./assets/images/3dA-logo.png" class="bi me-2" width="64" height="64">
-      </a>
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
 
-          <ul class="navbar-nav col-lg-6 justify-content-center flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Another</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img src="./assets/images/3dA-logo.png" class="bi me-2" width="64" height="64">
+          </a>
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+    
+              <ul class="navbar-nav col-lg-6 justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Another</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <div class="d-lg-flex col-lg-2 justify-content-lg-end">
-            <button class="btn btn-success">Contact me</button>
+              <div class="contact-me-btn d-lg-flex col-lg-1 justify-content-lg-end">
+                <button class="btn btn-danger">Contact me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Album example</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/Azemcore Website Project.png">
+                <div class="card-body">
+                  <p class="card-text">Website Project <br> I crafted this dynamic and responsive website using CSS, HTML, Javascript and Bootstrap. Leveraging Bootstrap's powerful framework, I meticulously researched and integrated all the visuals while keeping the responsive design that seamlessly adapts to various devices. One of the notable challenges was integrating images and combining colors. This project not only showcased my technical skills but also highlighted my adaptability and commitment to delivering impactful web solutions</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/Azemcore-Bootstrap-Project" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/Azemcore-Bootstrap-Project/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/Students Shuffler.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/students-shuffle" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/Flexbox pricing table.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-half.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/pricing-table-project" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/pricing-table-project/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/book_letter_frequency.png">
+                <div class="card-body">
+                  <p class="card-text">This program unpacks this zip file with 1867 novel War and Peace by Leo Tolstoy in it and calculates the letter statistics, then prints the result. The result is sorted by ascending letter frequency also by character case.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-half.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/book_letter_frequency/tree/master" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/drawing with JavaScript.png">
+                <div class="card-body">
+                  <p class="card-text">Very sketchy drawing website using JavaScript code.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-half.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+
+                      <a href="https://github.com/UmbraNova/Learning-Drawing-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/Learning-Drawing-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/responsive-layout-ww2.png">
+                <div class="card-body">
+                  <p class="card-text"> First responsive layout project. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-half.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/Learning-WW2-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/Learning-WW2-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/learning-tables.png">
+                <div class="card-body">
+                  <p class="card-text">My first tables project - This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/Learning-Tables" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/Learning-Tables/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/gradient-madness.png">
+                <div class="card-body">
+                  <p class="card-text">Gradient and Animation madness - This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-half.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/Learning-Gradients-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="https://umbranova.github.io/Learning-Gradients-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/book_generator.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/book_generator/blob/main/book_generator.ipynb" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/book_generator.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/book_generator/blob/main/book_generator.ipynb" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/book_generator.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/book_generator/blob/main/book_generator.ipynb" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img src="./assets/projects/book_generator.png">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="rating-contianer">
+                      <small class="rating-text text-muted">Complexity</small>
+                      <img class="rating-stars" src="./assets/images/redstar.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                      <img class="rating-stars" src="./assets/images/redstar-outline.png">
+                    </div>
+                    <div class="btn-group">
+                      <a href="https://github.com/UmbraNova/book_generator/blob/main/book_generator.ipynb" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
+                      <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </nav>
 
+    </main>
 
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
 
-  <!-- <div class="socialIcons">
-    <a href="" class="socialIconLink instagram" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="" class="socialIconLink facebook" target="_blank">
-        <i class="fab fa-facebook"></i>
-    </a>
-    <a href="" class="socialIconLink youtube" target="_blank">
-        <i class="fab fa-youtube"></i>
-    </a>
-    <a href="" class="socialIconLink linkedin" target="_blank">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="" class="socialIconLink twitter" target="_blank">
-        <i class="fab fa-twitter"></i>
-    </a>
-  </div> -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
