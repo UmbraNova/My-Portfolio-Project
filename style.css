@@ -30,6 +30,14 @@ nav {
 
 
 /* ===== main description START */
+.jumbotron .btn-danger {
+    border: none;
+}
+
+.jumbotron .btn-danger:hover {
+    filter: contrast(180%);
+}
+
 .jumbotron {
     background-color: aliceblue;
     opacity: 90%;
@@ -50,7 +58,7 @@ nav {
 }
 
 .github-btn {
-    border: 2px solid rgba(130, 130, 130, 0.605);
+    /* border: 2px solid rgba(130, 130, 130, 0.605); */
 }
 /* ===== main description END */
 
