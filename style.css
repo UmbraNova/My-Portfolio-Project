@@ -43,3 +43,57 @@ nav {
 
 
 
+/* ===== skills START */
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.skill {
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skill > p {
+    margin-left: 26px;
+    line-height: 20px
+}
+
+.skill[class="skill python"] {
+    background-image: url("./assets/icons/python.png");
+}
+
+.skill[class="skill tkinter"] {
+    background-image: url("./assets/icons/tkinter.png");
+}
+
+.skill[class="skill html"] {
+    background-image: url("./assets/icons/html.png");
+}
+
+.skill[class="skill css"] {
+    background-image: url("./assets/icons/css.png");
+}
+
+.skill[class="skill javascript"] {
+    background-image: url("./assets/icons/js.png");
+}
+
+.skill[class="skill bootstrap"] {
+    background-image: url("./assets/icons/bootstrap.png");
+}
+
+.skill[class="skill chrome"] {
+    background-image: url("./assets/icons/chrome-devtools.png");
+}
+
+.skill[class="skill wordpress"] {
+    background-image: url("./assets/icons/wordpress.png");
+}
+
+/* ===== skills END */
+
