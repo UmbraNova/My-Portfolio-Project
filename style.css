@@ -30,4 +30,13 @@ nav {
     background-color: black
 }
 
+.jumbotron {
+    background-color: aliceblue;
+    opacity: 90%;
+    color: black;
+}
+
+.jumbotron > div > p {
+    color: black !important;
+}
 

@@ -1,3 +1,5 @@
+// This is a prototype! I am working on making aslider for every project card section
+
 imagesOne = [
     "./assets/images/boliviainteligente-k4aqqqBBm1Y-unsplash.jpg",
     "./assets/images/mike-u--fW75WfpAfc-unsplash.jpg",
