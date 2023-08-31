@@ -6,14 +6,56 @@ body {
     background-size: cover;
   }
 
+
+/* ===== nav START */
 nav {
     background-color: black;
 }
 
-.contact-me-btn {
+.nav-contact-container {
     min-width: 170px;
 }
 
+.btn-danger {  /* Contact me Button */
+    background-image: linear-gradient(-45deg, blue, purple);
+    font-size: 18px;
+    /* background-color: transparent; */
+    /* text-decoration: underline; */
+}
+
+.btn-danger:hover {
+    border-color: white;
+}
+/* ===== nav END */
+
+
+/* ===== main description START */
+.jumbotron {
+    background-color: aliceblue;
+    opacity: 90%;
+    color: black;
+}
+
+.jumbotron > div > p {
+    color: black !important;
+}
+
+.my-image {
+    margin: 50px 0px 20px 0px;
+    width: 250px;
+}
+
+.main-description {
+    font-weight: 400;
+}
+
+.github-btn {
+    border: 2px solid rgba(130, 130, 130, 0.605);
+}
+/* ===== main description END */
+
+
+/* ===== cards settings START */
 .rating-stars {
     width: 20px;
 }
@@ -29,22 +71,10 @@ nav {
 .box-shadow {
     background-color: black
 }
-
-.jumbotron {
-    background-color: aliceblue;
-    opacity: 90%;
-    color: black;
-}
-
-.jumbotron > div > p {
-    color: black !important;
-}
-
-
+/* ===== cards settings END */
 
 
 /* ===== skills START */
-
 .skills-container {
     display: flex;
     justify-content: space-evenly;
@@ -95,5 +125,26 @@ nav {
     background-image: url("./assets/icons/wordpress.png");
 }
 
+.skill[class="skill elementor"] {
+    background-image: url("./assets/icons/elementor.png");
+}
 /* ===== skills END */
 
+/* ===== footer section START */
+.top-arrow {
+    position: fixed;
+    /* height: 40px; */
+    /* width: 40px; */
+    bottom: 20px;
+    right: 20px;
+}
+
+.top-arrow > img {
+    width: 45px;
+    /* height: 35px; */
+}
+
+.top-arrow > img:hover {
+    filter: invert();
+}
+/* ===== footer section END */
