@@ -1,10 +1,14 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     /* background: url(./assets/images/alexander-ant-EHlp8e-nQ3g-unsplash.jpg) no-repeat center center fixed; */
     /* background: url(./assets/images/risto-kokkonen-OELJMl0ZDh8-unsplash.jpg) no-repeat center center fixed; */
     /* background: url(./assets/images/vackground-com--ylEAG7OrvI-unsplash.jpg) no-repeat center center fixed; */
     background: url(./assets/images/milad-fakurian-YvYwTHcXaxI-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
-  }
+}
 
 
 /* ===== nav START */
@@ -18,9 +22,10 @@ nav {
 
 .btn-danger {  /* Contact me Button */
     background-image: linear-gradient(-45deg, blue, purple);
-    /* font-size: 18px; */
-    /* background-color: transparent; */
-    /* text-decoration: underline; */
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
 }
 
 .btn-danger:hover {
@@ -31,6 +36,14 @@ nav {
 
 
 /* ===== main description START */
+.github-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+
+}
+
 .jumbotron {
     background-color: aliceblue;
     opacity: 90%;
@@ -41,17 +54,15 @@ nav {
     color: black !important;
 }
 
-.my-image {
+.my-image-index {
     margin: 50px 0px 20px 0px;
     width: 250px;
+    filter: drop-shadow(0 0 0.5rem rgb(141, 8, 151));
 }
-/* 
-.main-description {
-    font-weight: 400;
-} */
 
-.github-btn {
-    /* border: 2px solid rgba(130, 130, 130, 0.605); */
+.my-image-contact {
+    width: 20vh;
+    filter: drop-shadow(0 0 0.5rem rgb(141, 8, 151));
 }
 /* ===== main description END */
 
@@ -65,12 +76,14 @@ nav {
     font-size: 12px;
 }
 
-.box-shadow img {
-    border-radius: 5px;
-}
-
 .box-shadow {
     background-color: black
+    /* background-color: white; */
+}
+
+.card-image {
+    padding: 3px;
+    border-radius: 5px;
 }
 /* ===== cards settings END */
 
@@ -138,6 +151,7 @@ nav {
     /* width: 40px; */
     bottom: 20px;
     right: 20px;
+    opacity: 50%;
 }
 
 .top-arrow > img {
@@ -147,5 +161,11 @@ nav {
 
 .top-arrow > img:hover {
     filter: invert();
+}
+
+@media (max-width:1000px) {
+    .top-arrow > img {
+        width: 35px;
+    }
 }
 /* ===== footer section END */
