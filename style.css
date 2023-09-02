@@ -21,28 +21,43 @@ nav {
     min-width: 170px;
 }
 
-.btn-danger {  /* Contact me Button */
+.btn-danger {  /* Contact me Buttons */
     background-image: linear-gradient(-45deg, blue, purple);
     padding: 10px 25px;
     border: none;
     border-radius: 3px;
     font-size: 13px;
+    border: 1px solid black;
 }
 
 .btn-danger:hover {
     border-color: white;
     filter: contrast(180%);
+    border: 1px solid black;
+}
+
+nav .btn-danger:hover {
+    border-color: white;
 }
 /* ===== nav END */
 
 
 /* ===== main description START */
+main .btn {
+    background-color: white;
+    color: black;
+}
+
+main .btn-danger {
+    color: white;
+}
+
 .github-btn {
     padding: 10px 25px;
     border: none;
     border-radius: 3px;
     font-size: 13px;
-
+    border: 1px solid black;
 }
 
 .me-section {
@@ -234,6 +249,15 @@ footer {
 .header-contact {
     background-color: white;
     opacity: 94%; color: black;
+}
+
+.map-container {
+    height: 500px;
+}
+
+iframe {
+    filter: invert();  /* I know... it looks wierd */
+    border-radius: 15px;
 }
 /* ===== contact.html END */
 
