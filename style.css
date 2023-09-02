@@ -251,14 +251,12 @@ footer {
     opacity: 94%; color: black;
 }
 
-.map-container {
-    height: 500px;
-}
-
-iframe {
-    filter: invert();  /* I know... it looks wierd */
-    border-radius: 15px;
-}
+.google-maps {
+    height: 100vh;
+    filter: grayscale() invert() contrast(80%);
+    width: 100%;
+    max-height: 600px;
+  }
 /* ===== contact.html END */
 
 
@@ -276,4 +274,3 @@ object {
     height: 100vh;
 }
 /* ===== resume.html END */
-
