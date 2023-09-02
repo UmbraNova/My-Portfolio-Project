@@ -4,7 +4,7 @@
 
 body {
     background: url(
-        ./assets/backgrounds/simon-lee-m0N1Y4hjI2Q-unsplash.jpg) no-repeat center center fixed;
+        ./assets/images/background\ \(2\).jpg) no-repeat center center fixed;
     background-size: cover;    
     /* filter: invert(); */  /* this looks so cool if inverted ^_^ */
     /* background-image: linear-gradient(45deg,red, black, blue); */
@@ -45,14 +45,14 @@ nav {
 
 }
 
-.jumbotron {
+.me-section {
     background-color: white;
     opacity: 94%;
     color: black;
 }
 
-.jumbotron > div > p {
-    color: black !important;
+.me-section > div > p {
+    color: black;
 }
 
 .my-image-index {
@@ -147,11 +147,9 @@ nav {
 }
 /* ===== skills END */
 
-/* ===== footer section START */
+/* ===== arrow-top section START */
 .top-arrow {
     position: fixed;
-    /* height: 40px; */
-    /* width: 40px; */
     bottom: 20px;
     right: 20px;
     opacity: 50%;
@@ -159,11 +157,11 @@ nav {
 
 .top-arrow > img {
     width: 45px;
-    /* height: 35px; */
+    filter: invert(70%);
 }
 
 .top-arrow > img:hover {
-    filter: invert();
+    scale: 1.1;
 }
 
 @media (max-width:1000px) {
@@ -171,7 +169,7 @@ nav {
         width: 35px;
     }
 }
-/* ===== footer section END */
+/* ===== arrow-top section END */
 
 
 /* +++++ contact file */
@@ -183,3 +181,26 @@ nav {
     opacity: 94%; color: black;
 }
 /* ===== header-contact END */
+
+
+/* ===== footer section START */
+main {
+    position: relative;
+}
+
+footer {
+    background-color: white;
+    opacity: 94%;
+    color: black;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%; */
+}
+
+@media (max-width:690px) {
+    .footer-social {
+        justify-content: center !important;
+        width: 100%;
+    }
+}
+/* ===== footer section END */
