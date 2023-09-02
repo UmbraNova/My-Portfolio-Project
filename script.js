@@ -1,4 +1,4 @@
-// This is a prototype! I am working on making aslider for every project card section
+// This is a prototype! I am working on making a slider for every project card section
 
 imagesOne = [
     "./assets/images/boliviainteligente-k4aqqqBBm1Y-unsplash.jpg",

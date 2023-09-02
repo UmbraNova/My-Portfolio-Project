@@ -71,6 +71,28 @@ nav {
 
 
 /* ===== cards settings START */
+.cards-title hr {
+    height: 1px;
+    background-image: linear-gradient(to right, purple,blue);
+    opacity: 100%;
+    border: none;
+    filter: drop-shadow(0 0 0.1rem black);
+}
+
+.cards-title .col-md-3 {
+    background-color: white;
+    opacity: 94%;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.1rem black);
+}
+
+
+.cards-title .col-md-3 span {
+    background: -webkit-linear-gradient(45deg,purple, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .rating-stars {
     width: 20px;
 }
