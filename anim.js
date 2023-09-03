@@ -1,8 +1,9 @@
 // ===== Having som fun with animations. Work in progress
 
 const buttonRotate = [
+    { transform: "rotateY(360deg)" },
     { transform: "rotate(0) scale(1)" },
-    { transform: "rotate(360deg) scale(0)" },
+    { transform: "rotate(-90deg) scale(0)" },
 ];
 
 const buttonTiming = {
