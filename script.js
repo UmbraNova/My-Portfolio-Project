@@ -1,46 +1,52 @@
 // This is a prototype! I am working on making a slider for every project card section
 
-imagesOne = [
-    "./assets/images/boliviainteligente-k4aqqqBBm1Y-unsplash.jpg",
-    "./assets/images/mike-u--fW75WfpAfc-unsplash.jpg",
-    "./assets/images/milad-fakurian-gJk9y8zKCyo-unsplash.jpg",
-    "./assets/images/trent-pickering-wUPnMygSwYk-unsplash.jpg"
+Images = [
+    "./assets/images/project (1).jpg",
+    "./assets/images/project (2).jpg",
+    "./assets/images/project (3).jpg",
+    "./assets/images/project (4).jpg",
+    "./assets/images/project (5).jpg"
     ]
 
-imagesTwo = [
-    "./assets/images/risto-kokkonen-OELJMl0ZDh8-unsplash.jpg",
-    "./assets/images/vackground-com--ylEAG7OrvI-unsplash.jpg",
-    "./assets/images/vackground-com-SfDofjXtxHE-unsplash.jpg",
-    "./assets/images/milad-fakurian-YvYwTHcXaxI-unsplash.jpg"
-    ]
 
-allImages = [imagesOne, imagesTwo]
+let timeoutID;
 
-// document.getElementsByClassName("leftArrow")[0].onclick=function() {
-//     slideShow("left");
-// }
+function sliderTimer() {
+    timeoutID = setTimeout(delayedFunc, 4000);
+}
 
-// document.getElementsByClassName("rightArrow")[0].onclick=function() {
-//     slideShow("right");
-// }
+function delayedFunc() {
+    slideShow("right");
+    sliderTimer();
+}
 
-var imgIndex = 1;
+sliderTimer();
 
+document.getElementById("leftButton").onclick=function() {
+    slideShow("left");
+}
+
+document.getElementById("rightButton").onclick=function() {
+    slideShow("right");
+}
 
 var index = 0;
+var choiceVar = 0;
 
 function slideShow(direction) {
-    if(direction == 'right') {
-        if(index == allImages[imgIndex].length-1) {
+    if(direction == "right") {
+        if(index == Images.length-1) {
             index = -1;
         }
         index++;
     } else {
         if(index <= 0) {
-            index = allImages[imgIndex].length;
+            index = Images.length;
         }
         index--;
     }
-    document.getElementsByClassName("cardImage 2")[0].src = allImages[imgIndex][index];
-
+    choiceVar += 1
+    document.getElementById("imageSlider").src = Images[index];
 }
+
+document.querySelector(".line").classList.add("fill-width");
