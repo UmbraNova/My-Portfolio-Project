@@ -6,18 +6,18 @@ const buttonRotate = [
     { transform: "rotate(-90deg) scale(0)" },
 ];
 
-const buttonTiming = {
-    duration: 1000,
+const animTime = {
+    duration: 1800,
     iterations: 1,
 };
 
 const btnContact = document.querySelector(".rotate-button");
 
 btnContact.addEventListener("click", () => {
-    btnContact.animate(buttonRotate, buttonTiming);
-  setTimeout(addRedirectHref, 1000)
+    btnContact.animate(buttonRotate, animTime);
+  setTimeout(addRedirectHref, 1850)
 });
 
 function addRedirectHref() {
-    window.location.href = "contact.html"
+    window.location.href = "contact.html";
 }
