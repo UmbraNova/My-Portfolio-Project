@@ -22,11 +22,11 @@ function delayedFunc() {
 
 sliderTimer();
 
-document.getElementById("leftButton").onclick=function() {
+document.querySelector("#leftButton").onclick=function() {
     slideShow("left");
 }
 
-document.getElementById("rightButton").onclick=function() {
+document.querySelector("#rightButton").onclick=function() {
     slideShow("right");
 }
 
@@ -46,7 +46,7 @@ function slideShow(direction) {
         index--;
     }
     choiceVar += 1
-    document.getElementById("imageSlider").src = Images[index];
+    document.querySelector("#imageSlider").src = Images[index];
 }
 
 document.querySelector(".line").classList.add("fill-width");
