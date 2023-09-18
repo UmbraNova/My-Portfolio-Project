@@ -15,7 +15,7 @@ const btnContact = document.querySelector(".rotate-button");
 
 btnContact.addEventListener("click", () => {
     btnContact.animate(buttonRotate, animTime);
-  setTimeout(addRedirectHref, 1850)
+  setTimeout(addRedirectHref, 1600)
 });
 
 function addRedirectHref() {
