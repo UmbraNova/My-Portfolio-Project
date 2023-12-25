@@ -6,53 +6,15 @@
     <title>Alex Nedelcu - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/3dA-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
     <script src="https://kit.fontawesome.com/a56996e6e8.js" crossorigin="anonymous"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="navbar large">
-      <div class="container-fluid">
-        <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <img src="./assets/images/3dA-logo.png" class="bi me-2" width="64" height="64">
-        </a>
-        <a class="navbar-brand" href="index.html">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-  
-            <ul class="navbar-nav col-lg-6 justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link active" aria-current="page">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/UmbraNova" target="_blank">Github</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/alexandru-nedelcu-office/" target="_blank">LinkedIn</a>
-              </li>
-            </ul>
-            <div class="nav-contact-container d-lg-flex col-lg-1 justify-content-lg-end">
-              <a class="btn btn-danger rotate-button">CONTACT ME</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+  <div w3-include-html="menu.html"></div> 
 
     <main>
-
       <section class="me-section text-center">
         <div class="container">
           <img class="my-image-index" draggable="false" src="./assets/images/cut-me-dr-bw-bl-opti.png">
@@ -89,7 +51,7 @@
                 <img class="card-image" src="./assets/projects/azemcore-project.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">Website Project</h5>
-                  <p class="card-text">Crafted this dynamic and responsive website using CSS, HTML, Javascript and Bootstrap. Leveraging Bootstrap's powerful framework, I integrated all the visuals while keeping the responsive design that seamlessly adapts to various devices. P.s. I like the animated sphere, searched the internet, and edited all night for that look.</p>
+                  <p class="card-text"></p>
                 </div>
 
                 <div class="skills-container">
@@ -100,14 +62,6 @@
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
                   <div class="btn-group">
                     <a href="https://github.com/UmbraNova/Azemcore-Bootstrap-Project" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
                     <a href="https://umbranova.github.io/Azemcore-Bootstrap-Project/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
@@ -123,7 +77,7 @@
                 <img class="card-image" src="./assets/projects/Students Shuffler.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">Students Shuffler</h5>
-                  <p class="card-text">Started this shuffler with the intent to make a small algorithm but added a lot more including some kind of interface and sounds. It outputs a random student but does not repeat the last two "winners", you can set the probability of a student getting chosen. This was a lot of fun to make and I like experimenting with Tkinter.</p>
+                  <p class="card-text"></p>
                 </div>
 
                 <div class="skills-container">
@@ -132,14 +86,6 @@
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
                   <div class="btn-group">
                     <a href="https://github.com/UmbraNova/students-shuffle" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
                     <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
@@ -155,7 +101,7 @@
                 <img class="card-image" src="./assets/projects/somacare.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">Therapy Clinic Website</h5>
-                  <p class="card-text">Website created for a physiotherapy clinic using Wordpress and Elementor. I really like the design of it, and later on, I added the products but the client is figuring out the logistics now so it will take some time before adding the shopping cart and everything else. I've made E-Commerce websites in the past so it shouldn't be a problem.</p>
+                  <p class="card-text"></p>
                 </div>
 
                 <div class="skills-container">
@@ -164,14 +110,6 @@
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
                   <div class="btn-group">
                     <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Code</a>
                     <a href="https://somacare.ro/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
@@ -181,23 +119,13 @@
               </div>
             </div>
 
-            <span class="cards-title d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-              <div class="col-md-4"><hr></div>
-              
-              <div class="col-md-3">
-                <h5 class="text-center text-dark pt-2 fw-normal px-2"><span>OTHER</span> PROJECTS</h5>
-              </div>
-    
-              <div class="col-md-4"><hr></div>
-            </span>
-
             <!-- ===== PROJECT 4 -->
             <div class="col-lg-4 d-flex align-items-stretch">
               <div class="card mb-4 box-shadow">
                 <img class="card-image" src="./assets/projects/portfolio.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">This Portofolio</h5>
-                  <p class="card-text">It's one of my biggest projects so I added it here. While designing it I didn't search for any other portfolio and built it using my own designing skills. Initially, there was a lot more color to it but I trimmed it down a bit because there were enough images and colors in the projects themselves. I also wanted to implement an image slider for every project card but it was too laggy... I will come back to this idea later.</p>
+                  <p class="card-text"></p>
                 </div>
 
                 <div class="skills-container">
@@ -208,14 +136,6 @@
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                  </div>
                   <div class="btn-group">
                     <a href="https://github.com/UmbraNova/My-Portfolio-Project" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
                     <a href="https://umbranova.github.io/My-Portfolio-Project/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
@@ -231,7 +151,7 @@
                 <img class="card-image" src="./assets/projects/drawing-javascript.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">Drawing - Experimental</h5>
-                  <p class="card-text">One of my first website projects using JS. While learning I often combine all in one website. After encountering this canvas term and adding it to my "learning website". I thought about making from scratch a Ms Paint-like website. I didn't have enough knowledge to make it, but after hours and hours of trying what various things do, I made something that resembles a drawing website using JavaScript code, a very sketchy one... I couldn't fix the perspective problem, sometimes the brush jumped randomly...</p>
+                  <p class="card-text"></p>
                 </div>
 
                 <div class="skills-container">
@@ -241,14 +161,6 @@
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
                   <div class="btn-group">
                     <a href="https://github.com/UmbraNova/Learning-Drawing-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
                     <a href="https://umbranova.github.io/Learning-Drawing-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
@@ -264,22 +176,14 @@
                 <img class="card-image" src="./assets/projects/responsive-layout-ww2.jpg">
                 <div class="card-body">
                   <h5 class="card-title text-center">Simple Responsive Website</h5>
-                  <p class="card-text">This is my first responsive layout project, simple WW2 website. One of the first projects I made. Not too complicated but I like it ^_^ . It's basically an incomplete article about World War 2. I also tested image and video implementation in this project. The menu it's just for decoration and sizing purposes. It's all grey and dark because of the subject of course. </p>                </div>
-
+                  <p class="card-text"></p>
+                </div>
                 <div class="skills-container">
                   <div class="skill html"><p>HTML</p></div>
                   <div class="skill css"><p>CSS</p></div>
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
                   <div class="btn-group">
                     <a href="https://github.com/UmbraNova/Learning-WW2-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
                     <a href="https://umbranova.github.io/Learning-WW2-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
@@ -289,197 +193,6 @@
               </div>
             </div>
 
-            <!-- ===== PROJECT 7 -->
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/learning-tables.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Tables Prototype</h5>
-                  <p class="card-text">Hello reader, here you can look at my first tables project, also I wrote all the text inside the tables. That may be interesting for you if you are interested in economics and financial investing opportunities like I am. Bellow the tables it's just random text. The menu in the upper part it's just for testing purposes and visuals and it has no other real function.</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill html"><p>HTML</p></div>
-                  <div class="skill css"><p>CSS</p></div>
-                </div>
-
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="https://github.com/UmbraNova/Learning-Tables" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
-                    <a href="https://umbranova.github.io/Learning-Tables/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
-                  </div>
-                </div><br>
-
-              </div>
-            </div>
-
-            <!-- ===== PROJECT 8 -->
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/gradient-madness.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Animation & Gradients</h5>
-                  <p class="card-text">In my learning path, I found information about gradients and animations on www.w3schools.com and it began the centuries of Gradient and Animation madness. It was a lot of fun to make and experiment with z-index and float properties, colors, and animations. I know it looks like a mess, I don't deny that, but a very fun one to make indeed.</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill css"><p>CSS</p></div>
-                  <div class="skill html"><p>HTML</p></div>
-                </div>
-
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="https://github.com/UmbraNova/Learning-Gradients-Website" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
-                    <a href="https://umbranova.github.io/Learning-Gradients-Website/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
-                  </div>
-                </div><br>
-
-              </div>
-            </div>
-
-            <!-- ===== PROJECT 9 -->            
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/book_generator.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Book Generator</h5>
-                  <p class="card-text">This is a book resume generator. This project is a member of "course-inspired projects". I had to do a simple homework created by my teacher but, maybe it was too simple. I turned it into something a lot more fun by creating randomly generated book resumes with prices, random names, small descriptions, and reviews. I know I can do a lot more with my current knowledge, I will definitely come back to this one later.</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill python"><p>Python</p></div>
-                </div>
-
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="https://github.com/UmbraNova/book_generator/blob/main/book_generator.ipynb" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
-                    <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
-                  </div>
-                </div><br>
-
-              </div>
-            </div>
-
-            <!-- ===== PROJECT 10 -->            
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/flexbox-pricing-table.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Flexbox Pricing Tables</h5>
-                  <p class="card-text">Created these flexbox pricing cards as part of my front-web developer course but improved on them by a margin compared to the default homework task. I had a lot of fun designing the cards, working with colors while keeping the responsiveness..</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill html"><p>HTML</p></div>
-                  <div class="skill css"><p>CSS</p></div>
-                </div>
-
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-half.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="https://github.com/UmbraNova/pricing-table-project" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
-                    <a href="https://umbranova.github.io/pricing-table-project/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
-                  </div>
-                </div><br>
-              
-              </div>
-            </div>
-
-            <!-- ===== PROJECT 11 -->            
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/azemcore.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Company Website</h5>
-                  <p class="card-text">This website I am creating using WordPress and Elementor. It's for an online company but they are still in the process of deciding the text, description, and images. I am still working on it and there is a lot to do but it's very doable. I thought I might add it to my portfolio and update it as I complete the project...</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill wordpress"><p>WordPress</p></div>
-                  <div class="skill elementor"><p>Elementor</p></div>
-                </div>
-
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Code</a>
-                    <a href="https://azemcore.com/" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Project</a>
-                  </div>
-                </div><br>
-
-              </div>
-            </div>
-
-            <!-- ===== PROJECT 12 -->
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-4 box-shadow">
-                <img class="card-image" src="./assets/projects/book_letter_frequency.jpg">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Statistics Algorithm</h5>
-                  <p class="card-text">This algorithm unpacks a zipped file with 1867 novel War and Peace TXT by Leo Tolstoy in it and calculates the frequcency of each letter in the text, then prints the result in the console. The result is sorted by ascending letter frequency also by character case. Maybe in the future, I will come back to this and make an interface and add more functionality.</p>
-                </div>
-
-                <div class="skills-container">
-                  <div class="skill python"><p>Python</p></div>
-                </div>
-              
-                <div class="d-flex justify-content-around align-items-center">
-                  <div class="rating-contianer">
-                    <small class="rating-text text-muted">My rating</small>
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                    <img class="rating-stars" src="./assets/icons/whitestar-outline.png">
-                  </div>
-                  <div class="btn-group">
-                    <a href="https://github.com/UmbraNova/book_letter_frequency/tree/master" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">Code</a>
-                    <a href="" role="button" class="btn btn-sm btn-outline-secondary disabled" target="_blank">Project</a>
-                  </div>
-                </div><br>
-
-              </div>
-            </div>          
-
-
 
           </div>  <!-- div[class="row"] END -->
         </div>  <!-- div[class="container"] END -->
@@ -487,7 +200,6 @@
 
     </main>
 
-    <!-- For future improvement: i should add FAQs and About pages and section -->
     <footer class="mt-5 d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
       <p class="col-md-4 mb-0 text-end">2023 © Alexandru Nedelcu</p>
 
@@ -506,9 +218,11 @@
       </ul>
     </footer>
     
-    
     <a class="top-arrow" href="#"><img src="./assets/icons/arrow-top.png"></a>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="anim.js"></script>
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
+    <script>w3IncludeHTML()</script>
+  </body>
 </html>

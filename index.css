@@ -1,14 +1,12 @@
-/* * {
+* {
     font-family: 'Roboto', sans-serif;
-} */
+    box-sizing: border-box;
+}
 
 body {
-    background: url(
-        ./assets/images/background\ \(2\).jpg) no-repeat center center fixed;
     background-size: cover;    
     /* filter: invert(); */  /* this looks so cool if inverted ^_^ */
-    /* background-image: linear-gradient(45deg,red, black, blue); */
-    /* background-color: black; */
+    background-image: linear-gradient(45deg,red, black, blue);
 }
 
 
