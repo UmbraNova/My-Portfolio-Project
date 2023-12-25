@@ -1,281 +1,57 @@
+/* main settings and variables */
+:root {
+    --font-color-one: #000000;
+    --font-color-two: red;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
     box-sizing: border-box;
+    /* making root font size similar to pixel size */
+    font-size: 6.25%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color-two);
 }
 
-body {
-    background-size: cover;    
-    /* filter: invert(); */  /* this looks so cool if inverted ^_^ */
-    background-image: linear-gradient(45deg,red, black, blue);
-}
-
-
-/* ===== nav START */
-nav {
-    background-color: black;
-}
-
-.nav-contact-container {
-    min-width: 170px;
-}
-
-.btn-danger {  /* Contact me Buttons */
-    background-image: linear-gradient(-45deg, blue, purple);
-    padding: 10px 25px;
-    border: none;
-    border-radius: 3px;
-    font-size: 13px;
-    border: 1px solid black;
-}
-
-.btn-danger:hover {
-    border-color: white;
-    filter: contrast(180%);
-    border: 1px solid black;
-}
-
-nav .btn-danger:hover {
-    border-color: white;
-}
-/* ===== nav END */
-
-
-/* ===== main description START */
-main .btn {
-    background-color: white;
-    color: black;
-}
-
-main .btn-danger {
-    color: white;
-}
-
-.github-btn {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 3px;
-    font-size: 13px;
-    border: 1px solid black;
-}
-
-.me-section {
-    background-color: white;
-    opacity: 94%;
-    color: black;
-}
-
-.me-section > div > p {
-    color: black;
-}
-
-.my-image-index {
-    margin: 50px 0px 20px 0px;
-    width: 250px;
-    /* filter: drop-shadow(0 0 0.5rem rgb(141, 8, 151)); */
-    filter: drop-shadow(0 0 0.4rem black);
-}
-
-.my-image-contact {
-    width: 16vh;
-    /* filter: drop-shadow(0 0 0.5rem rgb(141, 8, 151)); */
-    filter: drop-shadow(0 0 0.4rem black);
-}
-/* ===== main description END */
-
-
-/* ===== cards settings START */
-.cards-title hr {
-    height: 1px;
-    background-image: linear-gradient(to right, purple,blue);
-    opacity: 100%;
-    border: none;
-    filter: drop-shadow(0 0 0.1rem black);
-}
-
-.cards-title .col-md-3 {
-    background-color: white;
-    opacity: 94%;
-    border-radius: 3px;
-    filter: drop-shadow(0 0 0.1rem black);
-}
-
-
-.cards-title .col-md-3 span {
-    background: -webkit-linear-gradient(45deg,purple, blue);
-    
-    -webkit-background-clip: text;  /* Google Chrome, Safari */
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;     /* Mozila Firefox */
-    -moz-text-fill-color: transparent;
-    -o-background-clip: text;       /* Opera */
-    -o-text-fill-color: transparent;
-    -ms-background-clip: text;      /* Internet Explorer */
-    -ms-text-fill-color: transparent;
-}
-
-.rating-stars {
-    width: 20px;
-}
-
-.rating-text {
-    font-size: 12px;
-}
-
-.box-shadow {
-    background-color: black
-    /* background-color: white; */
-}
-
-.card-image {
-    padding: 3px;
-    border-radius: 5px;
-}
-/* ===== cards settings END */
-
-
-/* ===== skills START */
-.skills-container {
+/* nav menu */
+.navbar {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 15px;
+    justify-content: space-around;
+    /* align-items: center; */
+    font-size: 30rem;
 }
 
-.skill {
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.navbar img {
+    height: 70rem;
+    width: 70rem;
+    margin: 0 30rem;
 }
 
-.skill > p {
-    margin-left: 26px;
-    line-height: 20px
+.navbar a {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: var(--font-color-one);
 }
 
-.skill[class="skill python"] {
-    background-image: url("./assets/icons/python.png");
+.navbar a:nth-child(1) p {
+    align-self: center;
 }
 
-.skill[class="skill tkinter"] {
-    background-image: url("./assets/icons/tkinter.png");
+/* temp change for me image */
+a > img, main > section > div > img {
+    filter: invert();
 }
 
-.skill[class="skill html"] {
-    background-image: url("./assets/icons/html.png");
+/* temp change */
+main > section {
+    background-color: #000000;
 }
-
-.skill[class="skill css"] {
-    background-image: url("./assets/icons/css.png");
-}
-
-.skill[class="skill javascript"] {
-    background-image: url("./assets/icons/js.png");
-}
-
-.skill[class="skill bootstrap"] {
-    background-image: url("./assets/icons/bootstrap.png");
-}
-
-.skill[class="skill chrome"] {
-    background-image: url("./assets/icons/chrome-devtools.png");
-}
-
-.skill[class="skill wordpress"] {
-    background-image: url("./assets/icons/wordpress.png");
-}
-
-.skill[class="skill elementor"] {
-    background-image: url("./assets/icons/elementor.png");
-}
-/* ===== skills END */
-
-/* ===== arrow-top section START */
-.top-arrow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 50%;
-}
-
-.top-arrow > img {
-    width: 45px;
-    filter: invert(70%);
-}
-
-.top-arrow > img:hover {
-    scale: 1.1;
-}
-
-@media (max-width:1000px) {
-    .top-arrow > img {
-        width: 35px;
-    }
-}
-/* ===== arrow-top section END */
-
-
-/* ===== footer section START */
-main {
-    position: relative;
-}
-
-footer {
-    background-color: white;
-    opacity: 94%;
-    color: black;
-    /* position: absolute;
-    bottom: 0px;
-    width: 100%; */
-}
-
-@media (max-width:690px) {
-    footer ul, p {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .footer-social {
-        justify-content: center !important;
-    }
-
-    footer > p {
-        display: flex;
-        width: 100%;
-    }
-
-}
-/* ===== footer section END */
-
-
-/* +++++ contact file */
-
-
-/* ===== contact.html START */
-.header-contact {
-    background-color: white;
-    opacity: 94%; color: black;
-}
-
-.google-maps {
-    height: 100vh;
-    filter: grayscale() invert() contrast(80%);
-    width: 100%;
-    max-height: 600px;
-  }
-/* ===== contact.html END */
-
-
-/* +++++ resume file */
-
-
-/* ===== resume.html START */
-object > p {
-    margin: 40vh auto;
-    background-color: black !important;
-}
-
-object {
-    width: 100%;
-    height: 100vh;
-}
-/* ===== resume.html END */
