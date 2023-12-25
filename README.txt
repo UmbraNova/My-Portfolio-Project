@@ -1,1 +1,0 @@
-This is my protfolio project with links to many other projects made by me
