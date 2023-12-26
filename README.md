@@ -10,4 +10,6 @@ TODO
 - [ ] redo most of the HTML in index.html
 - [ ] redo the menu in menu.html, without Bootstrap
 - [ ] add whatsapp floating window at the bottom
-- [x] add a single evenListener
+- [x] add a single evenListener for main actions
+- [x] fix the sizing issues for different screens for hero section
+- [ ] add menu transformation in a dropdown menu on mobile devices

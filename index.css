@@ -32,14 +32,6 @@ main {
     margin: auto;
 }
 
-@media screen and (min-width: 1600px) {
-    .hero-image {
-    }
-    
-    html {
-        background-color: green;
-    }
-}
 
 
 /* nav menu */
@@ -61,7 +53,6 @@ main {
 }
 
 .navbar img {
-    filter: invert();
     margin: 0 30rem;
     height: 70rem;
     width: 70rem;
@@ -127,7 +118,6 @@ main {
     z-index: 900;
     height: 50vh;
     width: 100%;
-    /* background-position: bottom; */
 }
 
 .slides {
@@ -220,5 +210,17 @@ main {
 @media (hover: hover) {
     .dot:hover, .prev-btn:hover, .next-btn:hover {
         background-color: inherit;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .slideshow-container, .hero-image {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .slideshow-container, .hero-image {
+        height: 85vh;
     }
 }
