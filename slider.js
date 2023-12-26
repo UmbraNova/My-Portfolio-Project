@@ -46,11 +46,11 @@ function showSlides(index=slideIndex += 1) {
 }
 
 function changeSlide(n) {
-    showSlides(slideIndex += 1)
+    showSlides(slideIndex += n)
 }
 
 function currentSlide() {
-    showSlides()
+    showSlides(slideIndex = 1)
 }
     
 function autoSlide() {

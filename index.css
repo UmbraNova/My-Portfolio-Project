@@ -27,7 +27,18 @@ html {
 }
 
 main {
+    align-items: center;
     position: relative;
+    margin: auto;
+}
+
+@media screen and (min-width: 1600px) {
+    .hero-image {
+    }
+    
+    html {
+        background-color: green;
+    }
 }
 
 
@@ -41,6 +52,12 @@ main {
     display: flex;
     z-index: 999;
     width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .navbar img {
@@ -110,6 +127,7 @@ main {
     z-index: 900;
     height: 50vh;
     width: 100%;
+    /* background-position: bottom; */
 }
 
 .slides {
