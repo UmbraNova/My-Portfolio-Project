@@ -26,6 +26,10 @@ html {
     font-size: 6.25%;
 }
 
+main {
+    position: relative;
+}
+
 
 /* nav menu */
 .navbar {
