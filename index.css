@@ -1,7 +1,12 @@
 /* main settings and variables */
 :root {
     --font-color-one: #000000;
-    --font-color-two: red;
+    --font-color-two: #ffffff;
+    --font-color-three: red;
+
+    --color-one: green;
+    --color-two: coral;
+    --radius: 4px;
 }
 
 * {
@@ -14,44 +19,184 @@
 }
 
 html {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color-two);
     box-sizing: border-box;
     /* making root font size similar to pixel size */
     font-size: 6.25%;
-    font-family: 'Roboto', sans-serif;
-    color: var(--font-color-two);
 }
+
 
 /* nav menu */
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
+    background-color: inherit;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
     font-size: 30rem;
+    display: flex;
+    z-index: 999;
+    width: 100%;
 }
 
 .navbar img {
+    filter: invert();
+    margin: 0 30rem;
     height: 70rem;
     width: 70rem;
-    margin: 0 30rem;
 }
 
 .navbar a {
-    display: flex;
-    align-self: center;
-    text-decoration: none;
     color: var(--font-color-one);
-}
-
-.navbar a:nth-child(1) p {
+    text-decoration: none;
     align-self: center;
+    display: flex;
 }
 
-/* temp change for me image */
-a > img, main > section > div > img {
-    filter: invert();
+.menu-left-container, .menu-middle-container, .menu-right-container {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    height: 70rem;
+    width: 34vw;
 }
 
-/* temp change */
-main > section {
-    background-color: #000000;
+.menu-middle-container a:hover {
+    background-color: var(--color-two);
+}
+
+.menu-left-container {justify-content: flex-start;}
+.menu-middle-container {justify-content: space-evenly;}
+.menu-right-container {justify-content: flex-end;}
+
+.menu-right-container button, .menu-middle-container a {
+    border-radius: var(--radius);
+    padding: 15rem 26rem;
+    font-size: 18rem;
+    height: 50rem;
+    border: none;
+}
+
+.menu-right-container button {
+    margin-right: 20rem;
+}
+
+.menu-right-container button:hover {
+    background-color: var(--color-two);
+}
+
+.menu-phone {
+    background: -webkit-linear-gradient(-75deg,red 20%, limegreen 60%, blue 20%);
+    font-size: 18rem;
+
+    -webkit-background-clip: text;  /* Google Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;     /* Mozila Firefox */
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;      /* Internet Explorer */
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;       /* Opera */
+    -o-text-fill-color: transparent;
+}
+
+/* hero section */
+.hero-image {
+    vertical-align: middle;
+    object-fit: cover;
+    z-index: 900;
+    height: 50vh;
+    width: 100%;
+}
+
+.slides {
+    display: none
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.prev-btn, .next-btn {
+    border-radius: 0 var(--radius) var(--radius) 0;
+    transition: 0.5s ease-out;
+    align-items: center;
+    position: absolute;
+    user-select: none;
+    font-size: 32rem;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    height: 90%;
+    width: auto;
+    top: 10%;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.slider-text-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+}
+
+.slider-text {
+    background: linear-gradient(45deg, coral, red);
+    border-radius: var(--radius);
+    background-color: coral;
+    padding: 15rem 26rem;
+    user-select: none;
+    color: #eeeeee;
+    font-weight: 200;
+    font-size: 32rem;
+}
+
+.slider-lines {
+    position: absolute;
+    user-select: none;
+    text-align:center;
+    bottom: 10px;
+    width: 100%;
+}
+
+.line {
+    border-radius: var(--radius);
+    background-color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+    height: 6px;
+    width: 30px;
+}
+
+.active, .dot:hover {
+    background-color: coral;
+}
+
+.fade {
+    animation: fade 1s ease-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 20%;
+    } 
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .dot:hover, .prev-btn:hover, .next-btn:hover {
+        background-color: inherit;
+    }
 }
