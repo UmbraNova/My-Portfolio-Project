@@ -157,7 +157,7 @@ main {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     width: 100%;
 }
 

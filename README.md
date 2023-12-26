@@ -13,3 +13,5 @@ TODO
 - [x] add a single evenListener for main actions
 - [x] fix the sizing issues for different screens for hero section
 - [ ] add menu transformation in a dropdown menu on mobile devices
+- [ ] add checkbox for automatic slider or manul slider
+
