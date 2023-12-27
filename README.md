@@ -14,4 +14,15 @@ TODO
 - [x] fix the sizing issues for different screens for hero section
 - [ ] add menu transformation in a dropdown menu on mobile devices
 - [ ] add checkbox for automatic slider or manul slider
+- [x] added more sections before projects
+
+<sub>responsiveness</sub>
+- [ ] make the website completly responsive for mobile
+
+- [ ] make the hero section responsive for mobile
+- [x] make the description section responsive for mobile
+- [x] make the features section responsive for mobile
+- [ ] make the projects section responsive for mobile
+- [ ] make the x section responsive for mobile
+- [ ] make the footer section responsive for mobile
 
