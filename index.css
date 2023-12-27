@@ -164,6 +164,10 @@ main {
     top: 50%;
 }
 
+.slider-text-container a {
+    text-decoration: none;
+}
+
 .slider-text {
     background: linear-gradient(45deg, coral, red);
     border-radius: var(--radius);
@@ -213,6 +217,82 @@ main {
     }
 }
 
+/* description-section */
+
+.description-section {
+    padding: 50px;
+    height: 50vh;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--font-color-one);
+}
+
+.description-section p {
+    padding: 10px;
+    color: var(--font-color-one);
+    font-size: 14rem;
+    line-height: 30px;
+}
+
+.description-section p a {
+    color: coral;
+    background: -webkit-linear-gradient(75deg,coral, red);
+    text-decoration: none;
+    font-size: 10rem;
+
+    -webkit-background-clip: text;  /* Google Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;     /* Mozila Firefox */
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;      /* Internet Explorer */
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;       /* Opera */
+    -o-text-fill-color: transparent;
+}
+
+.description-section i {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.description-section h2 {
+    font-size: 28rem;
+    padding: 10px 40px;
+    font-weight: 400;
+}
+
+/* features section */
+
+.features-section {
+    padding: 50px;
+    height: 50vh;
+    background: linear-gradient(75deg,coral, red);
+    display: flex;
+    color: var(--font-color-one);
+    gap: 15px;
+    height: 68vh;
+    justify-content: center;
+}
+
+.features-section div {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    width: 15vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.features-section i {
+    padding-top: 7vh;
+    font-size: 80rem;
+}
+
+.features-section p {
+    padding: 40px 15px;
+    font-size: 10rem;
+    text-align: start;
+}
+
 /* projects-section */
 
 .divider {
@@ -233,7 +313,7 @@ main {
     width: 40%;
 }
 
-.divider h2 {
+.divider h3 {
     width: 20%;
     color: var(--font-color-one);
     font-weight: 200;
@@ -263,16 +343,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* ================================ media */
 
 @media (hover: hover) {
@@ -281,14 +351,10 @@ main {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .slider-text  {
         font-size: 16rem;
         padding: 10rem 20rem;
-    }
-
-    main {
-        background-color: red !important;
     }
 }
 
@@ -298,10 +364,5 @@ main {
     }
     .menu-middle-container a, .menu-right-container button {
         font-size: 12rem;
-    }
-
-
-    main {
-        background-color: green;
     }
 }
