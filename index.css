@@ -40,11 +40,10 @@ main {
     align-items: center;
     position: absolute;
     overflow: hidden;
-    font-size: 30rem;
     display: flex;
     z-index: 999;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -53,9 +52,9 @@ main {
 }
 
 .navbar img {
-    margin: 0 30rem;
-    height: 70rem;
-    width: 70rem;
+    margin: 0 10rem;
+    height: 40rem;
+    width: 40rem;
 }
 
 .navbar a {
@@ -69,13 +68,10 @@ main {
     background-color: transparent;
     align-items: center;
     display: flex;
-    height: 70rem;
+    height: 50rem;
     width: 34vw;
 }
 
-.menu-middle-container a:hover {
-    background-color: var(--color-two);
-}
 
 .menu-left-container {justify-content: flex-start;}
 .menu-middle-container {justify-content: space-evenly;}
@@ -83,23 +79,34 @@ main {
 
 .menu-right-container button, .menu-middle-container a {
     border-radius: var(--radius);
-    padding: 15rem 26rem;
-    font-size: 18rem;
-    height: 50rem;
+    padding: 8rem 16rem;
+    font-size: 10rem;
     border: none;
+    font-weight: 300;
+}
+
+
+.menu-middle-container a:hover, .menu-right-container button:hover {
+    background-color: var(--color-two);
+    color: var(--font-color-two);
 }
 
 .menu-right-container button {
-    margin-right: 20rem;
+    margin-right: 10rem;
 }
 
-.menu-right-container button:hover {
-    background-color: var(--color-two);
+.menu-middle-container {
+    list-style-type: none;
+}
+
+.menu-middle-container a {
+    font-size: 10em;
+
 }
 
 .menu-phone {
     background: -webkit-linear-gradient(-75deg,red 20%, limegreen 60%, blue 20%);
-    font-size: 18rem;
+    font-size: 10rem;
 
     -webkit-background-clip: text;  /* Google Chrome, Safari */
     -webkit-text-fill-color: transparent;
@@ -116,7 +123,7 @@ main {
     vertical-align: middle;
     object-fit: cover;
     z-index: 900;
-    height: 50vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -135,13 +142,13 @@ main {
     align-items: center;
     position: absolute;
     user-select: none;
-    font-size: 32rem;
+    font-size: 28rem;
     cursor: pointer;
     padding: 16px;
     display: flex;
-    height: 90%;
+    height: 91%;
     width: auto;
-    top: 10%;
+    top: 9%;
 }
 
 .next-btn {
@@ -149,27 +156,24 @@ main {
     border-radius: 3px 0 0 3px;
 }
 
-.prev-btn:hover, .next-btn:hover {
-    background-color: rgba(0,0,0,0.2);
-}
-
 .slider-text-container {
-    display: flex;
     justify-content: center;
     position: absolute;
-    top: 51%;
+    display: flex;
     width: 100%;
+    top: 50%;
 }
 
 .slider-text {
     background: linear-gradient(45deg, coral, red);
     border-radius: var(--radius);
     background-color: coral;
-    padding: 15rem 26rem;
+    padding: 10rem 26rem;
     user-select: none;
     color: #eeeeee;
     font-weight: 200;
-    font-size: 32rem;
+    font-size: 20rem;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
 
 .slider-lines {
@@ -207,20 +211,109 @@ main {
     }
 }
 
+/* projects-section */
+
+.divider {
+    width: 100%;
+    margin: 20px auto;
+    display: inline-block;
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 12rem;
+    color: var(--font-color-one);
+}
+
+.divider hr {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 10px;
+    padding: 100px;
+
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-one {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ media */
+
 @media (hover: hover) {
     .dot:hover, .prev-btn:hover, .next-btn:hover {
         background-color: inherit;
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .slideshow-container, .hero-image {
-        height: 70vh;
+/* 
+@media screen and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider-text  {
+        font-size: 16rem;
+        padding: 10rem 20rem;
+    }
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-image {
+        height: 80vh;
     }
 }
 
 @media screen and (min-width: 2000px) {
-    .slideshow-container, .hero-image {
+    .hero-image {
         height: 85vh;
+    }
+    .slider-text  {
+        font-size: 32rem;
+    }
+} */
+
+@media screen and (max-width: 1000px) {
+    .slider-text  {
+        font-size: 16rem;
+        padding: 10rem 20rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .slider-text  {
+        font-size: 32rem;
     }
 }

@@ -12,8 +12,14 @@ document.addEventListener("click", function(e) {
         case "fa-solid fa-chevron-left":
             changeSlide(-1)
             break
-        case "dot":
-            currentSlide()
+        case "line one":
+            currentSlide(1)
+            break
+        case "line two":
+            currentSlide(2)
+            break
+        case "line three":
+            currentSlide(3)
             break
         default:
             break
@@ -24,7 +30,8 @@ document.addEventListener("click", function(e) {
     
 function showSlides(index=slideIndex += 1) {
     const slides = document.getElementsByClassName("slides")
-    const dots = document.getElementsByClassName("line")
+    const lines = document.getElementsByClassName("line")
+    let i
     
     if (index > slides.length) {
         slideIndex = 1
@@ -32,25 +39,23 @@ function showSlides(index=slideIndex += 1) {
         slideIndex = slides.length
     }
 
-    let i
-
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < lines.length; i++) {
+        lines[i].className = lines[i].className.replace(" active", "");
     }
 
     slides[slideIndex - 1].style.display = "block"
-    dots[slideIndex - 1].className += " active"
+    lines[slideIndex - 1].className += " active"
 }
 
 function changeSlide(n) {
     showSlides(slideIndex += n)
 }
 
-function currentSlide() {
-    showSlides(slideIndex = 1)
+function currentSlide(n) {
+    showSlides(slideIndex = n)
 }
     
 function autoSlide() {
