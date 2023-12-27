@@ -1,7 +1,7 @@
 /* main settings and variables */
 :root {
     --font-color-one: #000000;
-    --font-color-two: #ffffff;
+    --font-color-two: #eeeeee;
     --font-color-three: red;
 
     --color-one: green;
@@ -30,6 +30,7 @@ main {
     align-items: center;
     position: relative;
     margin: auto;
+    background-color: #eeeeee;
 }
 
 
@@ -100,8 +101,7 @@ main {
 }
 
 .menu-middle-container a {
-    font-size: 10em;
-
+    font-size: 10rem;
 }
 
 .menu-phone {
@@ -123,7 +123,7 @@ main {
     vertical-align: middle;
     object-fit: cover;
     z-index: 900;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -186,16 +186,18 @@ main {
 
 .line {
     border-radius: var(--radius);
-    background-color: #ffffff;
+    background-color: #eeeeee;
     display: inline-block;
     cursor: pointer;
-    margin: 0 2px;
-    height: 6px;
+    margin: 0 4px;
+    height: 4px;
     width: 30px;
 }
 
 .active, .dot:hover {
     background-color: coral;
+    background: linear-gradient(45deg, coral, red);
+    transform: scale(1.2);
 }
 
 .fade {
@@ -214,18 +216,27 @@ main {
 /* projects-section */
 
 .divider {
-    width: 100%;
-    margin: 20px auto;
-    display: inline-block;
-    /* background-color: blue; */
-    text-align: center;
-    font-size: 12rem;
     color: var(--font-color-one);
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 12rem;
+    display: flex;
+    width: 100%;
 }
 
 .divider hr {
-    border: 1px solid red;
-    width: 100%;
+    background-color: coral;
+    background: linear-gradient(45deg, coral, red);
+    border: none;
+    height: 2px;
+    width: 40%;
+}
+
+.divider h2 {
+    width: 20%;
+    color: var(--font-color-one);
+    font-weight: 200;
 }
 
 .projects-section {
@@ -245,9 +256,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.card-one {
 }
 
 
@@ -273,47 +281,27 @@ main {
     }
 }
 
-/* 
-@media screen and (max-width: 500px) {
-    body {
-        background-color: red;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .slider-text  {
         font-size: 16rem;
         padding: 10rem 20rem;
     }
-    body {
-        background-color: green;
+
+    main {
+        background-color: red !important;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero-image {
-        height: 80vh;
-    }
-}
-
-@media screen and (min-width: 2000px) {
-    .hero-image {
-        height: 85vh;
-    }
     .slider-text  {
-        font-size: 32rem;
+        font-size: 24rem;
     }
-} */
-
-@media screen and (max-width: 1000px) {
-    .slider-text  {
-        font-size: 16rem;
-        padding: 10rem 20rem;
+    .menu-middle-container a, .menu-right-container button {
+        font-size: 12rem;
     }
-}
 
-@media screen and (min-width: 2000px) {
-    .slider-text  {
-        font-size: 32rem;
+
+    main {
+        background-color: green;
     }
 }
