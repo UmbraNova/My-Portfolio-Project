@@ -278,7 +278,7 @@ main {
 
 .features-section div {
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    background: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 255, 255, 0.2));
     justify-content: space-evenly;
     border-radius: var(--radius);
     flex-direction: column;
