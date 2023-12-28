@@ -309,13 +309,16 @@ main {
     font-weight: 200;
 }
 
-/* divider-section */
-
+/* divider */
 .divider {
-    color: var(--font-color-one);
+    /* background-color: blue; */
+    background-color: var(--font-color-two);
+    padding: 7vw 5vw;
+}
+
+.divider-container {
     align-items: center;
     text-align: center;
-    margin: 10vh auto;
     font-size: 1.2rem;
     display: flex;
     width: 100%;
@@ -334,9 +337,14 @@ main {
     color: var(--font-color-one);
     font-weight: 200;
     font-size: 3rem;
+    min-width: 250px;
 }
 
 /* projects-section */
+
+.projects-section {
+    background-color: black;
+}
 
 .projects-container {
     display: grid;
@@ -461,6 +469,11 @@ main {
     }
     .features-container p {
         font-size: 1rem;
+    }
+
+    /* divider */
+    .divider {
+        padding: 10vw 5vw;
     }
 }
 
