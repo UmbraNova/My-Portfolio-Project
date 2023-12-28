@@ -43,7 +43,7 @@ main {
     display: flex;
     z-index: 999;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -227,7 +227,7 @@ main {
 }
 
 .description-section h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 10px 40px;
     font-weight: 400;
 }
@@ -235,7 +235,7 @@ main {
 .description-section p {
     padding: 10px;
     color: var(--font-color-one);
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 40px;
     font-weight: 200;
 }
@@ -262,22 +262,28 @@ main {
 }
 
 
-/* features section */
+/* features-section */
 
 .features-section {
     background: linear-gradient(75deg,coral, red);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+}
+
+.features-container {
     grid-template-columns: 23% 23% 23% 23%;
-    color: var(--font-color-two);
     justify-content: space-evenly;
+    color: var(--font-color-two);
     padding: 10vh 50px;
+    max-width: 1600px;
     display: grid;
-    height: 70vh;
     gap: 15px;
 }
 
-.features-section div {
+.features-container div {
     background-color: rgba(255, 255, 255, 0.2);
-    background: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 255, 255, 0.2));
     justify-content: space-evenly;
     border-radius: var(--radius);
     flex-direction: column;
@@ -286,17 +292,18 @@ main {
     display: flex;
 }
 
-.features-section h3 {
-    font-size: 2.5rem;
+.features-container h3 {
+    font-size: 2rem;
+    margin: 10px 0;
 }
 
-.features-section i {
-    font-size: 10rem;
+.features-container i {
+    font-size: 8rem;
 }
 
-.features-section p {
+.features-container p {
     padding: 0 20px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: start;
     font-weight: 200;
 }
@@ -389,22 +396,21 @@ main {
 
     /* features-section */
     .features-section {
+        height: 120vh;
+    }
+    .features-container {
         grid-template-columns: 48% 48%;
         padding: 5vh 20px;
-        height: 90vh;
-        background: blue;
+        /* background: blue; */
     }
-    .features-section div {
-        height: 40vh;
+    .features-container div {
+        height: 50vh;
     }
-    .features-section h3 {
-        font-size: 2rem;
+    .features-container h3 {
+        font-size: 1.75rem;
     }
-    .features-section i {
-        font-size: 7rem;
-    }
-    .features-section p {
-        font-size: 1.35rem;
+    .features-container i {
+        font-size: 5rem;
     }
 }
 
@@ -427,29 +433,32 @@ main {
 
     /* features-section */
     .features-section {
+        height: 170vh;
+    }
+    .features-container {
         grid-template-columns: 100%;
         padding: 5vh 20px;
-        height: 135vh;
-        background: green;
+        /* background: green; */
     }
-    .features-section div {
-        height: 30vh;
+    .features-container div {
+        height: 40vh;
         min-width: 320px;
+        max-width: 480px;
     }
-    .features-section h3 {
-        font-size: 2rem;
+    .features-container h3 {
+        font-size: 1.5rem;
     }
-    .features-section i {
-        font-size: 6rem;
+    .features-container i {
+        font-size: 4rem;
     }
-    .features-section p {
-        font-size: 1.25rem;
+    .features-container p {
+        font-size: 1rem;
     }
 }
 
 
-@media screen and (min-width: 2200px) {
-    .features-section {
+/* @media screen and (min-width: 2200px) {
+    .features-container {
         padding: 10vh 300px;
     }
-}
+} */
