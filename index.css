@@ -28,7 +28,7 @@ main {
     align-items: center;
     position: relative;
     margin: auto;
-    background-color: #eeeeee;
+    background-color: violet;
     min-width: 320px;
 }
 
@@ -43,7 +43,7 @@ main {
     display: flex;
     z-index: 999;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -222,26 +222,33 @@ main {
 /* description-section */
 
 .description-section {
-    padding: 50px;
-    height: 50vh;
+    padding: 5% 50px;
     background-color: #ffffff;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 15% 35% 35% 15%;
     color: var(--font-color-one);
+    margin: 0 auto;
+}
+
+.description-section h2 {
+    font-size: 4rem;
+    padding: 10px 40px;
+    font-weight: 400;
 }
 
 .description-section p {
     padding: 10px;
     color: var(--font-color-one);
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 200;
 }
 
 .description-section p a {
     color: coral;
     background: -webkit-linear-gradient(75deg,coral, red);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
     
     -webkit-background-clip: text;  /* Google Chrome, Safari */
     -webkit-text-fill-color: transparent;
@@ -258,11 +265,6 @@ main {
     margin-left: 4px;
 }
 
-.description-section h2 {
-    font-size: 2.8rem;
-    padding: 10px 40px;
-    font-weight: 400;
-}
 
 /* features section */
 
@@ -272,9 +274,9 @@ main {
     background: linear-gradient(75deg,coral, red);
     color: var(--font-color-two);
     gap: 15px;
-    height: 70vh;
+    height: 60vh;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 23% 23% 23% 23%;
     justify-content: center;
 }
 
@@ -289,19 +291,19 @@ main {
 }
 
 .features-section h3 {
-    padding-top: 4vh;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 
 }
 
 .features-section i {
-    font-size: 8rem;
+    font-size: 10rem;
 }
 
 .features-section p {
-    padding: 15px;
-    font-size: 1rem;
+    padding: 0 20px;
+    font-size: 1.5rem;
     text-align: start;
+    font-weight: 200;
 }
 
 /* projects-section */
@@ -377,16 +379,16 @@ main {
     }
 
     .features-section {
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 48% 48%;
         height: 120vh;
         background: blue;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .features-section {
         grid-template-columns: 100%;
-        height: 230vh;
+        height: 210vh;
         background: green;
     }
     .features-section div {
