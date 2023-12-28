@@ -6,16 +6,15 @@ TODO
 - [x] fix sizing issue, when in mobile version, first project is wider
 - [x] remove Bootstrap
 - [x] organaize the css and html  code with comments
-- [ ] redo all the CSS in index.css
-- [ ] redo most of the HTML in index.html
+- [x] redo all the CSS in index.css
+- [x] redo most of the HTML in index.html
 - [ ] redo the menu in menu.html, without Bootstrap
 - [ ] add whatsapp floating window at the bottom
 - [x] add a single evenListener for main actions
 - [x] fix the sizing issues for different screens for hero section
 - [ ] add menu transformation in a dropdown menu on mobile devices
-- [ ] add checkbox for automatic slider or manul slider
 - [x] added more sections before projects
-- [] fix the rem sizing issue, publishing to server makes the font smaller
+- [ ] add a popup menu when clicked on contact me button, with options, whatsapp, email ,phone, etc.
 
 <sub>responsiveness</sub>
 - [ ] make the website completly responsive for mobile
