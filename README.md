@@ -15,6 +15,7 @@ TODO
 - [ ] add menu transformation in a dropdown menu on mobile devices
 - [ ] add checkbox for automatic slider or manul slider
 - [x] added more sections before projects
+- [] fix the rem sizing issue, publishing to server makes the font smaller
 
 <sub>responsiveness</sub>
 - [ ] make the website completly responsive for mobile
