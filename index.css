@@ -294,7 +294,8 @@ main {
 
 .features-container h3 {
     font-size: 2rem;
-    margin: 10px 0;
+    margin: 15px 0;
+    font-weight: 200;
 }
 
 .features-container i {
@@ -302,13 +303,13 @@ main {
 }
 
 .features-container p {
-    padding: 0 20px;
+    padding: 20px 20px;
     font-size: 1.25rem;
     text-align: start;
     font-weight: 200;
 }
 
-/* projects-section */
+/* divider-section */
 
 .divider {
     color: var(--font-color-one);
@@ -332,9 +333,12 @@ main {
     width: 20%;
     color: var(--font-color-one);
     font-weight: 200;
+    font-size: 3rem;
 }
 
-.projects-section {
+/* projects-section */
+
+.projects-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px 10px;
@@ -396,7 +400,7 @@ main {
 
     /* features-section */
     .features-section {
-        height: 120vh;
+        height: 140vh;
     }
     .features-container {
         grid-template-columns: 48% 48%;
@@ -404,13 +408,17 @@ main {
         /* background: blue; */
     }
     .features-container div {
-        height: 50vh;
+        height: 60vh;
+        max-width: 600px;
     }
     .features-container h3 {
         font-size: 1.75rem;
     }
     .features-container i {
         font-size: 5rem;
+    }
+    .features-container p {
+        padding: 20px 40px;
     }
 }
 
@@ -433,7 +441,7 @@ main {
 
     /* features-section */
     .features-section {
-        height: 170vh;
+        height: 320vw;
     }
     .features-container {
         grid-template-columns: 100%;
@@ -441,9 +449,9 @@ main {
         /* background: green; */
     }
     .features-container div {
-        height: 40vh;
+        height: 70vw;
         min-width: 320px;
-        max-width: 480px;
+        max-width: 440px;
     }
     .features-container h3 {
         font-size: 1.5rem;
