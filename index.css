@@ -30,6 +30,7 @@ main {
     margin: auto;
     background-color: violet;
     min-width: 320px;
+    overflow: hidden;
 }
 
 
@@ -356,7 +357,7 @@ main {
 /* projects-section */
 
 .projects-section {
-    background-color: #000000;
+    background-color: #010409;
     padding: 110px 0;
 }
 
@@ -370,17 +371,33 @@ main {
 
 .project {
     display: grid;
-    background-color: red;
     gap: 20px;
 }
 
 .project img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .project article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    padding: 30px;
+    font-size: 1.25rem;
     width: 100%;
+}
+
+.project h4 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.project a:hover {
+    transform: scale(1.01);
 }
 
 .line-one {
@@ -391,8 +408,6 @@ main {
 }
 .line-three {
     grid-template-columns: 2fr 2fr;
-    /* display: flex;
-    flex-direction:row-reverse; */
 }
 
 
@@ -400,21 +415,86 @@ main {
 /* github-section */
 
 .github-section {
-    background-color: green;
     height: 50vw;
+    position: relative;
+    background-color: #0D1117;
 }
 
-.github-container h3 {
-    font-size: 4rem;
+.github-container {
+    padding-top: 200px;
+    background-color: #010409;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github-container article {
+    transform: translate(-50%, -50%);
     text-align: center;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 30px;
+    left: 50%;
+    top: 15%;
+}
+
+.github-container article h3 {
+    color: #7CE38B;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+
+.github-container a {
+    text-decoration: none;
+}
+
+.github-container div {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+
+.github-container button {
+    border-radius: var(--radius);
+    background-color: #7CE38B;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: none;
+    margin-bottom: 30vh;
+}
+
+.github-container button:hover {
+    background-color: #1F6FEB;
+    color: #eeeeee;
+}
+
+.github-container ul {
+    list-style: none;
+    display: flex;
+}
+
+.github-container li {
+    font-size: 1.25rem;
+    max-width: 100px;
+}
+
+.github-container li p {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    width: 80%;
 }
 
 .github-container img {
     object-fit: cover;
     width: 100%;
     height: 90%;
-    opacity: 0.7;
 }
+
+
+/* info-section */
+
+/* ex: "2000 lines of code wrtiten" | sau pun in features section ? */
 
 /* wordpress-section */
 
@@ -494,8 +574,24 @@ a:hover, button:hover {
         display: flex;
         flex-direction: column;
     }
+    .projects-container .line-two {
+        flex-direction: row;
+    }
     .projects-container div:last-of-type {
         flex-direction: column-reverse;
+    }
+
+    /* github-section */
+    .github-container button {
+    margin: 4vh auto;
+    }
+    .github-container div {
+        position: relative;
+        left: 0;
+        margin-bottom: 40px;
+    }
+    .github-container div:not([data-attr="img"]) {
+        text-align: center;
     }
 }
 
