@@ -170,10 +170,11 @@ main {
 .slider-text {
     background-color: coral;
     background: linear-gradient(45deg, coral, red);
+    /* background: linear-gradient(45deg, blue, aqua); */
     border-radius: var(--radius);
     padding: 1rem 2.5rem;
     user-select: none;
-    color: #eeeeee;
+    color: #dddddd;
     font-weight: 200;
     font-size: 2.5rem;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
@@ -200,6 +201,7 @@ main {
 .active, .dot:hover {
     background-color: coral;
     background: linear-gradient(45deg, coral, red);
+    /* background: linear-gradient(45deg, blue, aqua); */
     transform: scale(1.2);
     box-shadow: 0 0 3px rgba(255, 255, 255, 1);
 }
@@ -268,6 +270,7 @@ main {
 
 .features-section {
     background: linear-gradient(75deg,coral, red);
+    /* background: linear-gradient(45deg, blue, aqua); */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -306,7 +309,7 @@ main {
 }
 
 .features-container p {
-    padding: 20px 20px;
+    padding: 30px;
     font-size: 1.25rem;
     text-align: start;
     font-weight: 200;
@@ -316,8 +319,9 @@ main {
 
 .divider {
     background-color: #ffffff;
-    padding-bottom: 300px;
+    padding-bottom: 240px;
     position: relative;
+    z-index: 3;
 }
 
 .divider-container {
@@ -378,7 +382,7 @@ main {
 .project img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: var(--radius);
     object-fit: cover;
 }
 
@@ -463,12 +467,12 @@ main {
 .github-container button {
     border-radius: var(--radius);
     background-color: #7CE38B;
-    margin-bottom: 30vh;
-    min-width: 240px;
     padding: 1rem 2rem;
     font-size: 1.5rem;
     font-weight: 300;
+    min-width: 240px;
     border: none;
+    margin: 10%;
 }
 
 .github-container button:hover {
@@ -477,6 +481,8 @@ main {
 }
 
 .github-container ul {
+    margin-left: 20px;
+    margin-top: 20vh;
     list-style: none;
     display: flex;
 }
@@ -487,9 +493,10 @@ main {
 }
 
 .github-container li p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 20px;
     color: #aaaaaa;
-    width: 80%;
+    width: 90%;
 }
 
 .github-container img {
@@ -498,19 +505,84 @@ main {
 }
 
 
-/* info-section */
+/* numbers-section */
 
-/* ex: "2000 lines of code wrtiten" | sau pun in features section ? */
+.numbers-section {
+    margin-top: 180px;
+}
+
+.numbers-section h3 {
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 3rem;
+    padding: 70px;
+}
+
+.numbers-container {
+    display: flex;
+}
+
+.num {
+    height: 700px;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.num number {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    padding-left: 30%;
+}
+
+.num p {
+    margin-top: 50px;
+    width: 50%;
+    align-self: center;
+}
+
+.lines-of-code {
+    background-color: black;
+}
+
+.projects-for-clients {
+    background-color: red;
+    background: linear-gradient(90deg, red, coral);
+}
+
+.contributions {
+    background-color: #ffffff;
+    color: #010409;
+}
 
 /* wordpress-section */
 
 .wordpress-section {
-    background-color: blue;
-    height: 50vh;
+    background-color: #ffffff;
+    /* background-color: blue; */
+    padding-top: 50px;
 }
 
 .wordpress-container {
-    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    display: grid;
+    margin: auto;
+    width: 80%;
+    gap: 20px;
+}
+
+.wordpress-container img {
+    border-radius: var(--radius);
+}
+
+.wordpress-container img:hover {
+    transform: scale(1.01);
 }
 
 
@@ -588,15 +660,37 @@ a:hover, button:hover {
     }
 
     /* github-section */
+    .github-container {
+        margin-bottom: 10000px;
+    }
+
     .github-container button {
         margin: 10%;
-        align-self: center;
     }
     .github-container div {
         position: relative;
         left: 0;
         margin-bottom: 40px;
     }
+    .github-container ul {
+        margin: 0;
+    }
+
+    /* wordpress-section */
+    .wordpress-section {
+        padding-top: 500px;
+    }
+    .wordpress-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* other */
+    .mobile-hide {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
