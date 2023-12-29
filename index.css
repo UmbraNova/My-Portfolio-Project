@@ -585,6 +585,12 @@ main {
     transform: scale(1.01);
 }
 
+/* footer */
+
+footer {
+    background-color: #010409;
+}
+
 
 
 /* ================================ @media */
