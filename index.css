@@ -1,10 +1,10 @@
 /* main settings and variables */
 :root {
     --font-color-one: #000000;
-    --font-color-two: #eeeeee;
+    --font-color-two: #dddddd;
     --font-color-three: red;
 
-    --color-one: #eeeeee;
+    --color-one: #dddddd;
     --color-two: coral;
     --radius: 4px;
 }
@@ -292,6 +292,7 @@ main {
     text-align: center;
     padding: 30px 0;
     display: flex;
+    color: #dddddd;
 }
 
 .features-container h3 {
@@ -314,13 +315,13 @@ main {
 /* divider */
 
 .divider {
-    background-color: var(--color-one);
+    background-color: #ffffff;
     padding-bottom: 300px;
     position: relative;
 }
 
 .divider-container {
-    background-color: var(--color-one);
+    background-color: #ffffff;
     transform: rotate(-1.8deg);
     align-items: center;
     position: absolute;
@@ -448,6 +449,11 @@ main {
     text-decoration: none;
 }
 
+.github-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: #7CE38B;
+}
+
 .github-container div {
     position: absolute;
     left: 10%;
@@ -457,11 +463,12 @@ main {
 .github-container button {
     border-radius: var(--radius);
     background-color: #7CE38B;
+    margin-bottom: 30vh;
+    min-width: 240px;
     padding: 1rem 2rem;
     font-size: 1.5rem;
     font-weight: 300;
     border: none;
-    margin-bottom: 30vh;
 }
 
 .github-container button:hover {
@@ -488,7 +495,6 @@ main {
 .github-container img {
     object-fit: cover;
     width: 100%;
-    height: 90%;
 }
 
 
@@ -583,15 +589,13 @@ a:hover, button:hover {
 
     /* github-section */
     .github-container button {
-    margin: 4vh auto;
+        margin: 10%;
+        align-self: center;
     }
     .github-container div {
         position: relative;
         left: 0;
         margin-bottom: 40px;
-    }
-    .github-container div:not([data-attr="img"]) {
-        text-align: center;
     }
 }
 
