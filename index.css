@@ -19,7 +19,8 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik', sans-serif;
     color: var(--font-color-two);
     box-sizing: border-box;
 }
@@ -275,6 +276,7 @@ main {
     align-items: center;
     display: flex;
     height: 80vh;
+    max-height: 800px;
 }
 
 .features-container {
@@ -426,7 +428,7 @@ main {
 }
 
 .github-container {
-    padding-top: 200px;
+    padding-top: 20vh;
     background-color: #010409;
     display: flex;
     flex-direction: column;
@@ -508,7 +510,7 @@ main {
 /* numbers-section */
 
 .numbers-section {
-    margin-top: 180px;
+    background-color: #ffffff;
 }
 
 .numbers-section h3 {
@@ -516,7 +518,8 @@ main {
     text-align: center;
     color: #000000;
     font-size: 3rem;
-    padding: 70px;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
 }
 
 .numbers-container {
@@ -524,7 +527,7 @@ main {
 }
 
 .num {
-    height: 700px;
+    height: 600px;
     width: 100%;
     font-size: 1.5rem;
     display: flex;
@@ -563,8 +566,8 @@ main {
 
 .wordpress-section {
     background-color: #ffffff;
-    /* background-color: blue; */
-    padding-top: 50px;
+    background: url("./assets/images/image-3451.jpg");
+    padding: 72px 0 100px 0;
 }
 
 .wordpress-container {
@@ -577,8 +580,14 @@ main {
     gap: 20px;
 }
 
+.w-project {
+    width: 30vw;
+}
+
 .wordpress-container img {
     border-radius: var(--radius);
+    object-fit: cover;
+    width: 100%;
 }
 
 .wordpress-container img:hover {
@@ -633,6 +642,7 @@ a:hover, button:hover {
     /* features-section */
     .features-section {
         height: 140vh;
+        max-height: none;
     }
     .features-container {
         grid-template-columns: 48% 48%;
