@@ -58,10 +58,12 @@ main {
     margin: 0 1rem;
     height: 5rem;
     width: 5rem;
+    filter: invert();
 }
 
 .navbar a {
-    color: var(--font-color-one);
+    /* color: var(--font-color-one); */
+    color: var(--font-color-two);
     text-decoration: none;
     align-self: center;
     display: flex;
@@ -88,10 +90,17 @@ main {
     font-weight: 300;
 }
 
+.menu-middle-container a:hover {
+    text-decoration: underline;
+    /* text-decoration-color: #1F6FEB; */
+}
 
-.menu-middle-container a:hover, .menu-right-container button:hover {
-    background-color: var(--color-two);
-    color: var(--font-color-two);
+.menu-right-container button:hover {
+    /* background-color: var(--color-two); */
+    /* color: var(--font-color-two); */
+    /* background-color: green; */
+    background: linear-gradient(45deg, #1F6FEB, aqua);
+    color: var(--font-color-one);
 }
 
 .menu-right-container button {
@@ -103,7 +112,9 @@ main {
 }
 
 .menu-phone {
-    background: -webkit-linear-gradient(-75deg,red 20%, coral 60%, black 20%);
+    /* background: -webkit-linear-gradient(-75deg,red 20%, coral 60%, black 20%); */
+    /* background: -webkit-linear-gradient(-75deg,green 20%, yellow 60%, white 20%); */
+    background: -webkit-linear-gradient(-75deg,#1F6FEB 20%, white 60%, aqua 20%);
     font-size: 1.5rem;
 
     -webkit-background-clip: text;  /* Google Chrome, Safari */
@@ -114,6 +125,10 @@ main {
     -ms-text-fill-color: transparent;
     -o-background-clip: text;       /* Opera */
     -o-text-fill-color: transparent;
+}
+
+.menu-phone {
+    text-decoration: underline;
 }
 
 /* hero section */
@@ -171,12 +186,14 @@ main {
 
 .slider-text {
     background-color: coral;
-    background: linear-gradient(45deg, coral, red);
-    /* background: linear-gradient(45deg, blue, aqua); */
+    /* background: linear-gradient(45deg, coral, red); */
+    /* background: linear-gradient(45deg, white, green); */
+    background: linear-gradient(45deg, #1F6FEB, aqua);
     border-radius: var(--radius);
     padding: 1rem 2.5rem;
     user-select: none;
-    color: #dddddd;
+    /* color: #eeeeee; */
+    color: black;
     font-weight: 200;
     font-size: 2.5rem;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
@@ -202,7 +219,8 @@ main {
 
 .active, .dot:hover {
     background-color: coral;
-    background: linear-gradient(45deg, coral, red);
+    /* background: linear-gradient(45deg, coral, red); */
+    background: linear-gradient(45deg, #1F6FEB, aqua);
     /* background: linear-gradient(45deg, blue, aqua); */
     transform: scale(1.2);
     box-shadow: 0 0 3px rgba(255, 255, 255, 1);
@@ -248,7 +266,8 @@ main {
 
 .description-section a {
     color: coral;
-    background: -webkit-linear-gradient(75deg,coral, red);
+    /* background: -webkit-linear-gradient(75deg,coral, red); */
+    background: -webkit-linear-gradient(75deg,green, white);
     /* text-decoration: none; */
     font-size: 1.75rem;
     
@@ -271,8 +290,8 @@ main {
 /* features-section */
 
 .features-section {
-    background: linear-gradient(75deg,coral, red);
-    /* background: linear-gradient(45deg, blue, aqua); */
+    /* background: linear-gradient(75deg,coral, red); */
+    background: linear-gradient(45deg, #1F6FEB, aqua);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -348,10 +367,15 @@ main {
 
 .divider hr {
     background-color: coral;
-    background: linear-gradient(45deg, coral, red);
+    /* background: linear-gradient(45deg, coral, red); */
+    background: linear-gradient(45deg, #1F6FEB, aqua);
     border: none;
-    height: 2px;
+    height: 3px;
     width: 38%;
+}
+
+.divider-container div hr:first-of-type {
+    background: linear-gradient(45deg, aqua, #1F6FEB);
 }
 
 .divider h3 {
@@ -519,7 +543,7 @@ main {
 }
 
 .numbers-section h3 {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     background-color: #0D1117;
     text-align: center;
     color: #000000;
@@ -561,8 +585,10 @@ main {
 }
 
 .projects-for-clients {
-    background-color: red;
-    background: linear-gradient(90deg, red, coral);
+    /* background-color: red; */
+    /* background: linear-gradient(90deg, red, coral); */
+    background: linear-gradient(90deg, #1F6FEB, aqua);
+    /* background: linear-gradient(90deg, blue,green); */
 }
 
 .contributions {
