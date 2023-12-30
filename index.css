@@ -30,6 +30,7 @@ main {
     position: relative;
     margin: auto;
     background-color: violet;
+    /* background-color: #000000; */
     min-width: 320px;
     overflow: hidden;
 }
@@ -361,6 +362,10 @@ main {
     min-width: 250px;
 }
 
+.non-rotate {
+    transform: rotate(0deg)!important;
+}
+
 /* projects-section */
 
 .projects-section {
@@ -515,8 +520,10 @@ main {
 
 .numbers-section h3 {
     background-color: #ffffff;
+    background-color: #0D1117;
     text-align: center;
     color: #000000;
+    color: #ffffff;
     font-size: 3rem;
     padding-top: 25vh;
     padding-bottom: 5vh;
@@ -549,7 +556,8 @@ main {
 }
 
 .lines-of-code {
-    background-color: black;
+    /* background-color: black; */
+    background-color: #0D1117;
 }
 
 .projects-for-clients {
@@ -567,7 +575,7 @@ main {
 .wordpress-section {
     background-color: #ffffff;
     background: url("./assets/images/image-3451.jpg");
-    padding: 72px 0 100px 0;
+    padding: 40px 0 100px 0;
 }
 
 .wordpress-container {
