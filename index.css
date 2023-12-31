@@ -10,8 +10,8 @@
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 *, *::before, *::after {
@@ -19,20 +19,33 @@
 }
 
 html {
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Rubik', sans-serif;
     color: var(--font-color-two);
     box-sizing: border-box;
 }
 
 main {
+    background-color: #000000;
     align-items: center;
     position: relative;
-    margin: auto;
-    background-color: violet;
-    /* background-color: #000000; */
     min-width: 320px;
     overflow: hidden;
+    margin: auto;
+}
+
+.gradient-font {
+    /* background: -webkit-linear-gradient(-75deg,red 20%, coral 60%, black 20%); */
+    /* background: -webkit-linear-gradient(-75deg,green 20%, yellow 60%, white 20%); */
+    background: -webkit-linear-gradient(-75deg,#1F6FEB 20%, cyan 60%, aqua 20%);
+
+    -webkit-background-clip: text;  /* Google Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;     /* Mozila Firefox */
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;      /* Internet Explorer */
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;       /* Opera */
+    -o-text-fill-color: transparent;
 }
 
 
@@ -73,7 +86,6 @@ main {
     background-color: transparent;
     align-items: center;
     display: flex;
-    height: 5rem;
     width: 34vw;
 }
 
@@ -92,14 +104,10 @@ main {
 
 .menu-middle-container a:hover {
     text-decoration: underline;
-    /* text-decoration-color: #1F6FEB; */
 }
 
 .menu-right-container button:hover {
-    /* background-color: var(--color-two); */
-    /* color: var(--font-color-two); */
-    /* background-color: green; */
-    background: linear-gradient(45deg, #1F6FEB, aqua);
+    background: linear-gradient(45deg, #1F6FEB, cyan, aqua);
     color: var(--font-color-one);
 }
 
@@ -112,19 +120,7 @@ main {
 }
 
 .menu-phone {
-    /* background: -webkit-linear-gradient(-75deg,red 20%, coral 60%, black 20%); */
-    /* background: -webkit-linear-gradient(-75deg,green 20%, yellow 60%, white 20%); */
-    background: -webkit-linear-gradient(-75deg,#1F6FEB 20%, white 60%, aqua 20%);
     font-size: 1.5rem;
-
-    -webkit-background-clip: text;  /* Google Chrome, Safari */
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;     /* Mozila Firefox */
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;      /* Internet Explorer */
-    -ms-text-fill-color: transparent;
-    -o-background-clip: text;       /* Opera */
-    -o-text-fill-color: transparent;
 }
 
 .menu-phone {
@@ -181,19 +177,20 @@ main {
 
 .slider-text-container a {
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.slider-text-container a:hover {
+    background-color: #ffffff;
+    border-radius: var(--radius);
 }
 
 
 .slider-text {
-    background-color: coral;
-    /* background: linear-gradient(45deg, coral, red); */
-    /* background: linear-gradient(45deg, white, green); */
-    background: linear-gradient(45deg, #1F6FEB, aqua);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: var(--radius);
     padding: 1rem 2.5rem;
     user-select: none;
-    /* color: #eeeeee; */
-    color: black;
     font-weight: 200;
     font-size: 2.5rem;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
@@ -218,10 +215,7 @@ main {
 }
 
 .active, .dot:hover {
-    background-color: coral;
-    /* background: linear-gradient(45deg, coral, red); */
-    background: linear-gradient(45deg, #1F6FEB, aqua);
-    /* background: linear-gradient(45deg, blue, aqua); */
+    background: linear-gradient(45deg, #1F6FEB, cyan, aqua);
     transform: scale(1.2);
     box-shadow: 0 0 3px rgba(255, 255, 255, 1);
 }
@@ -265,20 +259,7 @@ main {
 }
 
 .description-section a {
-    color: coral;
-    /* background: -webkit-linear-gradient(75deg,coral, red); */
-    background: -webkit-linear-gradient(75deg,green, white);
-    /* text-decoration: none; */
     font-size: 1.75rem;
-    
-    -webkit-background-clip: text;  /* Google Chrome, Safari */
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;     /* Mozila Firefox */
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;      /* Internet Explorer */
-    -ms-text-fill-color: transparent;
-    -o-background-clip: text;       /* Opera */
-    -o-text-fill-color: transparent;
 }
 
 .description-section i {
@@ -290,8 +271,7 @@ main {
 /* features-section */
 
 .features-section {
-    /* background: linear-gradient(75deg,coral, red); */
-    background: linear-gradient(45deg, #1F6FEB, aqua);
+    background: linear-gradient(45deg, #1F6FEB, rgb(0, 206, 206));
     justify-content: center;
     align-items: center;
     display: flex;
@@ -366,16 +346,15 @@ main {
 }
 
 .divider hr {
-    background-color: coral;
-    /* background: linear-gradient(45deg, coral, red); */
-    background: linear-gradient(45deg, #1F6FEB, aqua);
+    background-color: #1F6FEB;
+    background: linear-gradient(45deg, #1F6FEB, rgb(0, 206, 206));
     border: none;
     height: 3px;
     width: 38%;
 }
 
 .divider-container div hr:first-of-type {
-    background: linear-gradient(45deg, aqua, #1F6FEB);
+    background: linear-gradient(45deg,  rgb(0, 206, 206), #1F6FEB);
 }
 
 .divider h3 {
@@ -476,7 +455,7 @@ main {
 
 .github-container article h3 {
     color: #7CE38B;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -585,10 +564,8 @@ main {
 }
 
 .projects-for-clients {
-    /* background-color: red; */
-    /* background: linear-gradient(90deg, red, coral); */
-    background: linear-gradient(90deg, #1F6FEB, aqua);
-    /* background: linear-gradient(90deg, blue,green); */
+    background-color: #1F6FEB;
+    background: linear-gradient(90deg, #1F6FEB, rgb(0, 206, 206));
 }
 
 .contributions {
@@ -687,7 +664,7 @@ footer li a {
 }
 
 .social-media i:hover {
-    color: coral;
+    color: #1F6FEB;
     transform: scale(2.5);
 }
 
