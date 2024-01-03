@@ -476,20 +476,22 @@ main {
     bottom: 200px;
 }
 
-.github-container button {
+.github-container div a {
     border-radius: var(--radius);
     background-color: #7CE38B;
+    color: var(--font-color-one);
     padding: 1rem 2rem;
+    position: relative;
     font-size: 1.5rem;
     font-weight: 300;
     min-width: 240px;
     border: none;
     margin: 10%;
-    position: relative;
 }
 
-.github-container button:hover {
+.github-container div a:hover {
     background-color: #1F6FEB;
+    text-decoration: none;
     color: #eeeeee;
 }
 
