@@ -606,7 +606,7 @@ main {
 
 .wordpress-container img {
     border-radius: var(--radius);
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -812,16 +812,18 @@ object {
         font-size: 1.5rem;
     }
 
-    .github-container button {
+    .github-container div a {
         margin: 10%;
+        margin-bottom: 200px;
     }
     .github-container div {
         position: relative;
         left: 0;
         bottom: 0;
+        padding-top: 100px;
     }
     .github-container ul {
-        margin: 0;
+        margin: 0 auto 50px auto;
     }
 
     /* wordpress-section */
@@ -836,6 +838,14 @@ object {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    /* footer */
+    .social-media ul {
+        width: 100%;
+    }
+    .footer-description {
+        grid-template-columns: auto;
     }
 
     /* other */
@@ -892,6 +902,26 @@ object {
         font-size: 1.25rem;
         top: -15%;
     }
+
+    /* footer */
+    .footer-nav {
+        padding: 50px 0;
+    }
+    .footer-nav img {
+        grid-column: span 3;
+        margin: auto;
+    }
+
+    .footer-description {
+        padding: 50px 0;
+    }
+    .footer-contact {
+        flex-direction: column;
+    }
+    .footer-contact p {
+        padding-bottom: 20px;
+    }
+
 
     /* divider */
     .divider {
