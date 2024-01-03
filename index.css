@@ -183,6 +183,7 @@ main {
 .slider-text-container a:hover {
     background-color: #ffffff;
     border-radius: var(--radius);
+    text-shadow: 0 0 0 #000000;
 }
 
 
@@ -291,7 +292,7 @@ main {
 
 .features-container div {
     background-color: rgba(255, 255, 255, 0.2);
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     border-radius: var(--radius);
     flex-direction: column;
     text-align: center;
@@ -302,8 +303,9 @@ main {
 
 .features-container h3 {
     font-size: 2rem;
-    margin: 15px 0;
+    /* margin: 15px 0; */
     font-weight: 200;
+    padding: 15px 10px;
 }
 
 .features-container i {
@@ -583,7 +585,7 @@ main {
 
 .wordpress-container {
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     justify-content: center;
     display: grid;
     margin: auto;
@@ -640,11 +642,6 @@ footer li a {
 .social-media h5 {
     padding: 20px 50px;
     font-size: 1.5rem;
-}
-
-.social-media hr {
-    width: 40%;
-    align-self: center;
 }
 
 .social-media ul {
@@ -718,6 +715,12 @@ footer li a {
     text-decoration: none;
 }
 
+/* resume.html */
+
+object {
+    margin-top: 100px;
+}
+
 
 /* ================================ @media */
 
@@ -764,10 +767,8 @@ a:hover, button:hover {
     .features-container {
         grid-template-columns: 48% 48%;
         padding: 5vh 20px;
-        /* background: blue; */
     }
     .features-container div {
-        height: 60vh;
         max-width: 600px;
     }
     .features-container h3 {
@@ -850,10 +851,8 @@ a:hover, button:hover {
     .features-container {
         grid-template-columns: 100%;
         padding: 5vh 20px;
-        /* background: green; */
     }
     .features-container div {
-        height: 70vw;
         min-width: 320px;
         max-width: 440px;
     }
@@ -872,10 +871,3 @@ a:hover, button:hover {
         padding: 10vw 5vw;
     }
 }
-
-
-/* @media screen and (min-width: 2200px) {
-    .features-container {
-        padding: 10vh 300px;
-    }
-} */
