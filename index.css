@@ -435,7 +435,6 @@ main {
 .github-section {
     background-color: #010409;
     position: relative;
-    padding-top: 8%;
     padding-bottom: 0;
 }
 
@@ -453,7 +452,7 @@ main {
     font-size: 1.75rem;
     left: 50%;
     width: 90%;
-    top: -10%;
+    top: 0;
 }
 
 .github-container article h3 {
@@ -526,7 +525,6 @@ main {
 }
 
 .numbers-section h3 {
-    /* background-color: #ffffff; */
     background-color: #0D1117;
     text-align: center;
     color: #000000;
@@ -543,9 +541,7 @@ main {
     height: 600px;
     width: 100%;
     font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
 }
 
 .num number {
@@ -556,9 +552,9 @@ main {
 }
 
 .num p {
-    margin-top: 50px;
     width: 50%;
-    align-self: center;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .lines-of-code {
@@ -631,8 +627,9 @@ footer ul li:hover {
 }
 
 footer li a {
-    color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
 }
 
 .footer-container {
@@ -808,7 +805,7 @@ object {
         padding-bottom: 100px;
     }
     .github-container article {
-        top: -20%;
+        top: -10%;
         padding-top: 100px;
         font-size: 1.5rem;
     }
@@ -891,6 +888,7 @@ object {
     .github-container article {
         padding-top: 100px;
         font-size: 1.25rem;
+        top: -15%;
     }
 
     /* divider */
