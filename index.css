@@ -435,12 +435,11 @@ main {
 .github-section {
     background-color: #010409;
     position: relative;
-    padding-top: 20vh;
-    height: 50vw;
+    padding-top: 8%;
+    padding-bottom: 0;
 }
 
 .github-container {
-    background-color: #010409;
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -454,7 +453,7 @@ main {
     font-size: 1.75rem;
     left: 50%;
     width: 90%;
-    top: -20%;
+    top: -10%;
 }
 
 .github-container article h3 {
@@ -475,7 +474,7 @@ main {
 .github-container div {
     position: absolute;
     left: 10vw;
-    bottom: 0;
+    bottom: 200px;
 }
 
 .github-container button {
@@ -497,7 +496,7 @@ main {
 
 .github-container ul {
     margin-left: 20px;
-    margin-top: 20vh;
+    margin-top: 18vh;
     list-style: none;
     display: flex;
 }
@@ -533,8 +532,7 @@ main {
     color: #000000;
     color: #ffffff;
     font-size: 3rem;
-    padding-top: 25vh;
-    padding-bottom: 5vh;
+    padding-top: 15vh;
 }
 
 .numbers-container {
@@ -584,7 +582,7 @@ main {
     position: relative;
     background-color: #ffffff;
     background: url("./assets/images/image-3451.jpg");
-    padding: 40px 0 100px 0;
+    padding: 40px 0 160px 0;
 }
 
 .wordpress-section h3 {
@@ -807,7 +805,12 @@ object {
 
     /* github-section */
     .github-container {
-        /* height: 100vh; */
+        padding-bottom: 100px;
+    }
+    .github-container article {
+        top: -20%;
+        padding-top: 100px;
+        font-size: 1.5rem;
     }
 
     .github-container button {
@@ -816,7 +819,7 @@ object {
     .github-container div {
         position: relative;
         left: 0;
-        margin-bottom: 40px;
+        bottom: 0;
     }
     .github-container ul {
         margin: 0;
@@ -826,6 +829,7 @@ object {
     .wordpress-section h3 {
         width: 80vw;
     }
+
     .w-project {
         width: 70vw;
     }
@@ -881,6 +885,12 @@ object {
     }
     .features-container p {
         font-size: 1rem;
+    }
+
+    /* github-section */
+    .github-container article {
+        padding-top: 100px;
+        font-size: 1.25rem;
     }
 
     /* divider */
