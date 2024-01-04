@@ -51,7 +51,79 @@ main {
 
 
 /* nav menu */
-.navbar {
+nav {
+    background-color: red;
+    height: 80px;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: var(--radius);
+    text-transform: uppercase;
+}
+
+nav a.active, nav a:hover {
+    background: blue;
+    transition: .5s;
+}
+
+.menu-checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-check {
+    display: none;
+}
+
+/* https://www.youtube.com/watch?v=oLgtucwjVII */
+
+@media (max-width: 950px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li {
+        font-size: 16px;
+    }
+    .menu-checkbtn {
+        display: block;
+    }
+    nav ul {
+
+    }
+}
+
+
+/* .navbar {
     background-color: inherit;
     align-items: center;
     position: absolute;
@@ -75,7 +147,6 @@ main {
 }
 
 .navbar a {
-    /* color: var(--font-color-one); */
     color: var(--font-color-two);
     text-decoration: none;
     align-self: center;
@@ -96,10 +167,11 @@ main {
 
 .menu-right-container button, .menu-middle-container a {
     border-radius: var(--radius);
+    transition: all 0.35s;
     padding: 1rem 2rem;
     font-size: 1.5rem;
-    border: none;
     font-weight: 300;
+    border: none;
 }
 
 .menu-middle-container a:hover {
@@ -125,7 +197,7 @@ main {
 
 .menu-phone {
     text-decoration: underline;
-}
+} */
 
 /* hero section */
 .hero-image {
@@ -147,7 +219,7 @@ main {
 
 .prev-btn, .next-btn {
     border-radius: 0 var(--radius) var(--radius) 0;
-    transition: 0.5s ease-out;
+    transition: all 0.35s;
     align-items: center;
     position: absolute;
     user-select: none;
@@ -189,12 +261,13 @@ main {
 
 .slider-text {
     border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
     border-radius: var(--radius);
+    transition: all 0.35s;
     padding: 1rem 2.5rem;
     user-select: none;
-    font-weight: 200;
     font-size: 2.5rem;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    font-weight: 200;
 }
 
 .slider-lines {
@@ -928,3 +1001,4 @@ object {
         padding: 10vw 5vw;
     }
 }
+
