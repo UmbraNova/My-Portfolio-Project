@@ -144,6 +144,9 @@ nav ul a.active:hover {
     .menu-checkbtn {
         display: block;
     }
+    label[for="logo-image"] {
+        padding: 0 10px;
+    }
     nav ul {
         position: fixed;
         width: 100%;
@@ -242,7 +245,7 @@ nav ul a.active:hover {
     user-select: none;
     font-size: 2.5rem;
     font-weight: 200;
-    transition: all 0.5s;
+    transition: 1s;
 }
 
 .slider-lines {
