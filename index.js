@@ -9,22 +9,18 @@ let menuCheckEl = ""
 setTimeout(function() {
     contactEl = document.getElementById("contact-el")
     menuCheckEl = document.getElementById("menu-check")
-}, 10)
+}, 100)
 
 
 document.addEventListener("click", function(e){
+    console.log()
+
     if (e.target.tagName=="A") {
         menuCheckEl.checked = false
     }
 
-    if (e.target.className.split(" ")[0]=="contact-me-btn") {
-        contactEl.style.display = "flex"
-        document.body.style.overflow = "hidden"
-    } else if (e.target.id=="exit-btn") {
-        contactEl.style.display = "none"
-        document.body.style.overflow = "scroll"
-    }
-
+    openAndCloseContact(e.target)
+    
     if (e.target.id=="menu-check") {
         openMobileMenuScrollLock(e.target.id)
     }
@@ -35,6 +31,17 @@ function openMobileMenuScrollLock() {
     if (menuCheckEl.checked) {
         document.body.style.overflow = "hidden"
     } else if (menuCheckEl.checked==false) {
+        document.body.style.overflow = "scroll"
+    }
+}
+
+
+function openAndCloseContact(eTarget) {
+    if (eTarget.className.split(" ")[0]=="contact-me-btn") {
+        contactEl.style.display = "flex"
+        document.body.style.overflow = "hidden"
+    } else if (eTarget.id=="exit-btn" || eTarget.id=="contact-el") {
+        contactEl.style.display = "none"
         document.body.style.overflow = "scroll"
     }
 }
