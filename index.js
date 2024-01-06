@@ -1,6 +1,6 @@
 
 
-// variables
+// main variables
 let contactEl = ""
 let menuCheckEl = ""
 
