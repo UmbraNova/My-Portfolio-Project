@@ -17,7 +17,7 @@ document.addEventListener("click", function(e){
         menuCheckEl.checked = false
     }
 
-    if (e.target.id=="contact-me-btn") {
+    if (e.target.className.split(" ")[0]=="contact-me-btn") {
         contactEl.style.display = "flex"
         document.body.style.overflow = "hidden"
     } else if (e.target.id=="exit-btn") {

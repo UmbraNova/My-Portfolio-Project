@@ -68,37 +68,38 @@ main {
 }
 
 #contact-el #exit-btn:hover {
-    color: rgb(212, 1, 1);
+    color: cyan;
 }
 
-.left-side {
+.contact-container {
     background-color: #010409ca;
     border-radius: 10px;
 }
 
-.left-side > div {
-    padding: 70px;
+.contact-container > div {
+    padding: 50px;
 }
 
-.left-side .details {
-    margin: 14px;
+.contact-container .details {
     text-align: center;
+    margin: 40px;
 }
 
-.left-side .details i {
-    font-size: 30px;
-    color: cyan;
+.contact-container .details i {
     margin-bottom: 10px;
+    font-size: 2rem;
+    color: cyan;
 }
 
-.left-side .details .topic {
-    font-size: 18px;
+.contact-container .details .topic {
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
-.left-side .details .text-one, .left-side .details .text-two {
-    font-size: 14px;
+.contact-container .details .text-one, .contact-container .details .text-two {
     color: #afafb6;
+    font-size: 1rem;
+    line-height: 20px;
 }
 
 /* nav menu */
