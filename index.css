@@ -48,7 +48,58 @@ main {
     -o-text-fill-color: transparent;
 }
 
+/* contact element in menu.html */
 
+#contact-el {
+    background-color: rgba(0, 0, 255, 0.2);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    z-index: 3;
+    inset: 0;
+    display: none;
+}
+
+#contact-el #exit-btn {
+    margin: 20px 0 0 85%;
+    font-size: 2rem;
+}
+
+#contact-el #exit-btn:hover {
+    color: rgb(212, 1, 1);
+}
+
+.left-side {
+    background-color: #010409ca;
+    border-radius: 10px;
+}
+
+.left-side > div {
+    padding: 70px;
+}
+
+.left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.left-side .details i {
+    font-size: 30px;
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.left-side .details .text-one, .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
 
 /* nav menu */
 nav {
@@ -57,16 +108,12 @@ nav {
     width: 100%;
 }
 
-label[for="logo-image"] {
+.site-name-btn {
     line-height: 80px;
     padding: 0 10px 0 90px;
     font-size: 35px;
     color: white;
-}
-
-label[for="logo-image"] a {
     text-decoration: none;
-    color: white;
 }
 
 #logo-image {
@@ -116,7 +163,7 @@ nav ul a.active:hover {
     color: #ffffff;
 }
 
-.menu-checkbtn {
+#menu-checkbtn {
     margin-right: 40px;
     line-height: 80px;
     color: #ffffff;
@@ -141,10 +188,10 @@ nav ul a.active:hover {
         margin: 50px 0;
         line-height: 30px;
     }
-    .menu-checkbtn {
+    #menu-checkbtn {
         display: block;
     }
-    label[for="logo-image"] {
+    .site-name-btn {
         padding: 0 10px;
     }
     nav ul {
@@ -870,7 +917,7 @@ object {
         padding-top: 100px;
     }
     .github-container ul {
-        margin: 0 auto 50px auto;
+        margin: 4vh auto 50px auto;
     }
 
     /* wordpress-section */

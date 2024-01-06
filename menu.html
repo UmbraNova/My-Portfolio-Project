@@ -1,40 +1,49 @@
-
-
-<!-- <nav class="navbar">
-    <div class="menu-left-container">
-        <a href="index.html">
-            <img src="./assets/images/3dA-logo - Copy.png" alt="portfolio logo">
-        </a>
-        <a class="menu-phone gradient-font" href="tel:+40768708522">+40 768 708 522</a>
+<!-- contact element -->
+<div id="contact-el">
+    <div class="left-side">
+        <i id="exit-btn" class="fa-solid fa-circle-xmark"></i>
+        <div>
+            <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Surkhet, NP12</div>
+                <div class="text-two">Birendranagar 06</div>
+            </div>
+            <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9893 5647</div>
+                <div class="text-two">+0096 3434 5678</div>
+            </div>
+            <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">codinglab@gmail.com</div>
+                <div class="text-two">info.codinglab@gmail.com</div>
+            </div>
+        </div>
     </div>
-
-    <ul class="menu-middle-container">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#wordpress-section">WORDPRESS</a></li>
-        <li><a href="index.html#github-section">GITHUB</a></li>
-        <li><a href="resume.html">RESUME</a></li>
+    <ul>
+        <li></li>
+        <li><a class="menu-phone gradient-font" href="tel:+40768708522">+40 768 708 522</a></li>
     </ul>
-
-    <div class="menu-right-container">
-        <button id="contact-me-btn" href="#">CONTACT ME</button>
     </div>
-</nav> -->
 
 <nav>
-    <input type="checkbox" id="menu-check">
-    <label for="menu-check" class="menu-checkbtn">
+    <a class="site-name-btn" href="index.html"><img id="logo-image" src="./assets/images/3dA-logo - Copy.png" alt="portfolio logo">PortfolioX</a>
+    
+    <label for="menu-check" id="menu-checkbtn">
         <i class="fas fa-bars"></i>
     </label>
-    <label for="logo-image">
-        <a href="index.html"><img id="logo-image" src="./assets/images/3dA-logo - Copy.png" alt="portfolio logo">PortfolioX</a>
-        <!-- <a class="menu-phone gradient-font" href="tel:+40768708522">+40 768 708 522</a> -->
-    </label>
-
+    <input type="checkbox" id="menu-check">
+    
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="index.html#description-section">About</a></li>
         <li><a href="index.html#github-section">Github</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a id="contact-me-btn" href="#">Contact</a></li>
         <li><a href="resume.html">Resume</a></li>
     </ul>
 </nav>
+
+<script src="index.js"></script>
