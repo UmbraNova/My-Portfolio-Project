@@ -980,10 +980,14 @@ object {
 
     /* description-section */
     .description-section h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .description-section article, .description-section article a {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .description-section a {
+        font-size: 1.25rem;
     }
 
     /* features-section */
@@ -1008,6 +1012,11 @@ object {
     }
     .features-container p {
         font-size: 1rem;
+    }
+
+    /* divider */
+    .divider h3 {
+        font-size: 2rem;
     }
 
     /* github-section */
@@ -1042,4 +1051,3 @@ object {
         padding: 10vw 5vw;
     }
 }
-

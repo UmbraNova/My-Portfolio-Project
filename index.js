@@ -13,8 +13,6 @@ setTimeout(function() {
 
 
 document.addEventListener("click", function(e){
-    console.log()
-
     if (e.target.tagName=="A") {
         menuCheckEl.checked = false
     }
