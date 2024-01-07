@@ -192,15 +192,13 @@ nav ul a.active:hover {
     font-size: 30px;
     display: none;
     float: right;
-    user-select: none;
 }
 
 #menu-check {
     display: none;
-    user-select: none;
 }
 
-#menu-check i {
+#menu-checkbtn i {
     user-select: none;
 }
 
