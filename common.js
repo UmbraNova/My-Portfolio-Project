@@ -25,4 +25,8 @@ function includeFooter() {
 
 
 includeMenu()
-includeFooter()
+
+// footer loads later. For future optimization reasons.
+setTimeout(function() {
+  includeFooter()
+}, 500)
