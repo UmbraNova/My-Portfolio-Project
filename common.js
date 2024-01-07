@@ -1,5 +1,5 @@
 
-// this function includes the menu into another files
+// this function includes the menu into other files
 function includeMenu() {
   var xhttp = new XMLHttpRequest()
   xhttp.onreadystatechange = function() {
@@ -11,7 +11,7 @@ function includeMenu() {
   xhttp.send()
 }
 
-// this function includes the footer into another files
+// this function includes the footer into other files
 function includeFooter() {
   var xhttp = new XMLHttpRequest()
   xhttp.onreadystatechange = function() {

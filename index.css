@@ -1040,6 +1040,7 @@ object {
     }
     .footer-contact {
         flex-direction: column;
+        padding: 30px 0;
     }
     .footer-contact p {
         padding-bottom: 20px;
