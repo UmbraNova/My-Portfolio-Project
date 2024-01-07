@@ -185,17 +185,19 @@ nav ul a.active:hover {
 }
 
 #menu-checkbtn {
-    margin-right: 40px;
+    margin-right: 20px;
     line-height: 80px;
     color: #ffffff;
     cursor: pointer;
     font-size: 30px;
     display: none;
     float: right;
+    user-select: none;
 }
 
 #menu-check {
     display: none;
+    user-select: none;
 }
 
 #menu-check i {
