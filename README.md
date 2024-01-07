@@ -2,7 +2,13 @@
 
 Link: https://my-data-portfolio-project.netlify.app/
 
-Welcome to my interactive portfolio, showcasing my skills and projects as an aspiring entry-level/junior developer. This project is crafted with HTML, CSS, and JavaScript, highlighting a variety of key features to provide a dynamic and user-friendly experience.
+Welcome to my interactive portfolio, showcasing my skills and projects as an aspiring entry-level/junior developer. This project is crafted with:
+* HTML
+* CSS
+* JavaScript
+
+highlighting a variety of key features to provide a dynamic and user-friendly experience.
+
 
 Key Features:
 
@@ -48,14 +54,14 @@ TODO
 
 
 ### Deployment with Netlify:
-This website is deployed and hosted on Netlify, a cloud platform that simplifies the deployment and hosting process. Netlify offers a seamless experience for continuous deployment, making it an ideal choice for hosting this small app.
+* This website is deployed and hosted on Netlify, a cloud platform that simplifies the deployment and hosting process. Netlify offers a seamless experience for continuous deployment, making it an ideal choice for hosting this small app.
 
-Why Netlify? Ease of Use: Netlify provides a straightforward and user-friendly platform for deploying web applications. With just a few clicks, you can connect your GitHub repository and have your app live in no time.
+* Why Netlify? Ease of Use: Netlify provides a straightforward and user-friendly platform for deploying web applications. With just a few clicks, you can connect your GitHub repository and have your app live in no time.
 
-Automatic Deployments: Netlify automatically deploys your app whenever changes are pushed to the connected GitHub repository. This ensures that the latest version is always available to users.
+* Automatic Deployments: Netlify automatically deploys your app whenever changes are pushed to the connected GitHub repository. This ensures that the latest version is always available to users.
 
-Free Hosting: Netlify offers a generous free hosting plan, making it a cost-effective solution for hosting personal projects and small applications.
+* Free Hosting: Netlify offers a generous free hosting plan, making it a cost-effective solution for hosting personal projects and small applications.
 
-Serverless Functions: If your app requires serverless functionality, Netlify provides serverless functions that can be easily integrated into your project.
+* Serverless Functions: If your app requires serverless functionality, Netlify provides serverless functions that can be easily integrated into your project.
 
 *By choosing Netlify, I aimed to provide a hassle-free deployment experience while keeping the hosting cost-effective. The simplicity and automation provided by Netlify align well with the goals of this collaborative group organizer.
