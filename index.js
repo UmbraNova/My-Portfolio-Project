@@ -20,9 +20,18 @@ document.addEventListener("click", function(e){
     openAndCloseContact(e.target)
     
     if (e.target.id=="menu-check") {
+        clickScaleEffect(document.getElementById("menu-bars"))
         openMobileMenuScrollLock(e.target.id)
     }
 })
+
+
+function clickScaleEffect(elem) {
+    elem.style.transform = "scale(1.1)"
+    setTimeout(function() {
+        elem.style.transform = "scale(1)"
+    }, 100)
+}
 
 
 function openMobileMenuScrollLock() {

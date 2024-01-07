@@ -198,6 +198,10 @@ nav ul a.active:hover {
     display: none;
 }
 
+#menu-check i {
+    user-select: none;
+}
+
 @media (max-width: 950px) {
     label.logo {
         font-size: 30px;
