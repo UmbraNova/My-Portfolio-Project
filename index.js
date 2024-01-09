@@ -15,10 +15,10 @@ let menuCheckEl = ""
 // TODO: sometimes it gives an error in netlify servers.
 
 // setTimout to load it after everything else
-// setTimeout(function() {
+setTimeout(function() {
     contactEl = document.getElementById("contact-el")
     menuCheckEl = document.getElementById("menu-check")
-// }, 10)
+}, 10)
 
 
 document.addEventListener("click", function(e){
@@ -27,6 +27,7 @@ document.addEventListener("click", function(e){
     }
 
     if (e.target.className.split(" ")[0]=="contact-me-btn") {
+        location.reload()
         contactEl.style.display = "flex"
         document.body.style.overflow = "hidden"
     } else if (e.target.id=="exit-btn" || e.target.id=="contact-el") {
