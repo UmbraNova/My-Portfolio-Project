@@ -1,12 +1,12 @@
 
-let flag = true
-setTimeout(function() {
-    if (flag == true) {
-        location.reload()
-    }
-}, 200)
+// let flag = true
+// setTimeout(function() {
+//     if (flag == true) {
+//         location.reload()
+//     }
+// }, 200)
 
-flag = false
+// flag = false
 
 // main variables
 let contactEl = ""
@@ -26,7 +26,13 @@ document.addEventListener("click", function(e){
         menuCheckEl.checked = false
     }
 
-    openAndCloseContact(e.target)
+    if (e.target.className.split(" ")[0]=="contact-me-btn") {
+        contactEl.style.display = "flex"
+        document.body.style.overflow = "hidden"
+    } else if (e.target.id=="exit-btn" || e.target.id=="contact-el") {
+        contactEl.style.display = "none"
+        document.body.style.overflow = "scroll"
+    }
     
     if (e.target.id=="menu-check") {
         clickScaleEffect(document.getElementById("menu-bars"))
@@ -47,16 +53,6 @@ function openMobileMenuScrollLock() {
     if (menuCheckEl.checked) {
         document.body.style.overflow = "hidden"
     } else if (menuCheckEl.checked==false) {
-        document.body.style.overflow = "scroll"
-    }
-}
-
-function openAndCloseContact(eTarget) {
-    if (eTarget.className.split(" ")[0]=="contact-me-btn") {
-        contactEl.style.display = "flex"
-        document.body.style.overflow = "hidden"
-    } else if (eTarget.id=="exit-btn" || eTarget.id=="contact-el") {
-        contactEl.style.display = "none"
         document.body.style.overflow = "scroll"
     }
 }
