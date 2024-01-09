@@ -14,6 +14,7 @@ setTimeout(function() {
 
 document.addEventListener("click", function(e){
     if (e.target.tagName=="A") {
+        // TODO: fix netlify error here
         menuCheckEl.checked = false
     }
 
@@ -34,6 +35,7 @@ function clickScaleEffect(elem) {
 }
 
 
+// TODO: fix netlify error here
 function openMobileMenuScrollLock() {
     if (menuCheckEl.checked) {
         document.body.style.overflow = "hidden"

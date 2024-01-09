@@ -1,83 +1,41 @@
 document.addEventListener("click", function(e) {
-    // switch (e.target.className) {
-    //     case "next-btn":
-    //         changeSlide(1)
-    //         break
-    //     case "fa-solid fa-chevron-right":
-    //         changeSlide(1)
-    //         break
-    //     case "prev-btn":
-    //         changeSlide(-1)
-    //         break
-    //     case "fa-solid fa-chevron-left":
-    //         changeSlide(-1)
-    //         break
-    //     case "line one":
-    //         currentSlide(1)
-    //         break
-    //     case "line two":
-    //         currentSlide(2)
-    //         break
-    //     case "line three":
-    //         currentSlide(3)
-    //         break
-    //     default:
-    //         break
-    //     }
-
 
     const sliderBtn = e.target.className        
     if (sliderBtn == "next-btn" || sliderBtn == "fa-solid fa-chevron-right") {
-        changeSlide(1)
+        showSlides(slideIndex += 1)
     } else if (sliderBtn == "prev-btn" || sliderBtn == "fa-solid fa-chevron-left") {
-        changeSlide(-1)
+        showSlides(slideIndex += -1)
     } else if (sliderBtn == "line one") {
-        currentSlide(1)
+        showSlides(slideIndex = 1)
     } else if (sliderBtn == "line two") {
-        currentSlide(2)
+        showSlides(slideIndex = 2)
     } else if (sliderBtn == "line three") {
-        currentSlide(3)
+        showSlides(slideIndex = 3)
     }
 
 })
     
-    let slideIndex = 1
+let slideIndex = 1
     
 function showSlides(index=slideIndex += 1) {
     const slides = document.getElementsByClassName("slides")
     const lines = document.getElementsByClassName("line")
     let i
     
-    if (index > slides.length) {
+    if (index > 3) {
         slideIndex = 1
     } else if (index < 1) {
-        slideIndex = slides.length
+        slideIndex = 3
     }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < lines.length; i++) {
-        lines[i].className = lines[i].className.replace(" active", "");
+    for (i = 0; i < 3; i++) {
+        slides[i].style.display = "none"
+        lines[i].className = lines[i].className.replace(" active", "")
     }
 
     slides[slideIndex - 1].style.display = "block"
     lines[slideIndex - 1].className += " active"
 }
 
-function changeSlide(n) {
-    showSlides(slideIndex += n)
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n)
-}
-    
-function autoSlide() {
-    changeSlide(2)
-    setTimeout(autoSlide, 8000)
-}
-
 showSlides()
-// autoSlide()
 
