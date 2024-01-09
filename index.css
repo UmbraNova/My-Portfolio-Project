@@ -139,6 +139,7 @@ nav {
     font-size: 35px;
     color: white;
     text-decoration: none;
+    font-family: 'Rubik Glitch', system-ui;
 }
 
 #logo-image {
@@ -594,9 +595,12 @@ nav ul a.active:hover {
 }
 
 .github-container div {
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    left: 10vw;
-    bottom: 200px;
+    display: flex;
+    bottom: 160px;
+    left: 7%;
 }
 
 .github-container div a {
@@ -604,12 +608,8 @@ nav ul a.active:hover {
     color: var(--font-color-one);
     background-color: #ffffff;
     padding: 1rem 2rem;
-    position: relative;
     font-size: 1.5rem;
-    font-weight: 300;
     min-width: 240px;
-    border: none;
-    margin: 10%;
 }
 
 .github-container div a:hover {
@@ -627,13 +627,15 @@ nav ul a.active:hover {
 
 .github-container li {
     font-size: 1.25rem;
-    max-width: 100px;
+    max-width: 140px;
+    margin-top: 20px;
 }
 
 .github-container li p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 20px;
     color: #aaaaaa;
+    padding-top: 5px;
     padding-right: 10px;
 }
 
@@ -926,20 +928,14 @@ object {
         padding-bottom: 100px;
     }
     .github-container article {
-        top: -10%;
-        padding-top: 100px;
         font-size: 1.5rem;
     }
-
-    .github-container div a {
-        margin: 10%;
-        margin-bottom: 200px;
-    }
     .github-container div {
+        padding-top: 60px;
+        text-align: center;
         position: relative;
-        left: 0;
         bottom: 0;
-        padding-top: 100px;
+        left: 0;
     }
     .github-container ul {
         margin: 4vh auto 50px auto;
