@@ -601,8 +601,8 @@ nav ul a.active:hover {
 
 .github-container div a {
     border-radius: var(--radius);
-    background-color: #7CE38B;
     color: var(--font-color-one);
+    background-color: #ffffff;
     padding: 1rem 2rem;
     position: relative;
     font-size: 1.5rem;
@@ -613,9 +613,9 @@ nav ul a.active:hover {
 }
 
 .github-container div a:hover {
-    background-color: #1F6FEB;
+    background-color: #7CE38B;
     text-decoration: none;
-    color: #eeeeee;
+    color: #000000;
 }
 
 .github-container ul {
@@ -634,7 +634,7 @@ nav ul a.active:hover {
     font-size: 0.85rem;
     line-height: 20px;
     color: #aaaaaa;
-    width: 90%;
+    padding-right: 10px;
 }
 
 .github-container img {
@@ -943,6 +943,11 @@ object {
     }
     .github-container ul {
         margin: 4vh auto 50px auto;
+        flex-direction: column;
+    }
+    .github-container li {
+        max-width: 100%;
+        text-align: center;
     }
 
     /* websites-section */
