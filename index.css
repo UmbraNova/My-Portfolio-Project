@@ -298,13 +298,14 @@ nav ul a.active:hover {
 
 .slider-text-container a {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: var(--radius);
 }
 
 .slider-text-container a:hover {
     background-color: #ffffff;
-    border-radius: var(--radius);
     text-shadow: 0 0 0 #000000;
+    transition: 0.4s;
 }
 
 
