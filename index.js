@@ -18,7 +18,7 @@ let menuCheckEl = ""
 setTimeout(function() {
     contactEl = document.getElementById("contact-el")
     menuCheckEl = document.getElementById("menu-check")
-}, 10)
+}, 500)
 
 
 document.addEventListener("click", function(e){
