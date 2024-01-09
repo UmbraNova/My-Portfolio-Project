@@ -15,10 +15,10 @@ let menuCheckEl = ""
 // TODO: sometimes it gives an error in netlify servers.
 
 // setTimout to load it after everything else
-setTimeout(function() {
+// setTimeout(function() {
     contactEl = document.getElementById("contact-el")
     menuCheckEl = document.getElementById("menu-check")
-}, 100)
+// }, 10)
 
 
 document.addEventListener("click", function(e){
