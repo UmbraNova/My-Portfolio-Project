@@ -1,4 +1,12 @@
 
+let flag = true
+setTimeout(function() {
+    if (flag == true) {
+        location.reload()
+    }
+}, 200)
+
+flag = false
 
 // main variables
 let contactEl = ""
