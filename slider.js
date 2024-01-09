@@ -1,29 +1,44 @@
 document.addEventListener("click", function(e) {
-    switch (e.target.className) {
-        case "next-btn":
-            changeSlide(1)
-            break
-        case "fa-solid fa-chevron-right":
-            changeSlide(1)
-            break
-        case "prev-btn":
-            changeSlide(-1)
-            break
-        case "fa-solid fa-chevron-left":
-            changeSlide(-1)
-            break
-        case "line one":
-            currentSlide(1)
-            break
-        case "line two":
-            currentSlide(2)
-            break
-        case "line three":
-            currentSlide(3)
-            break
-        default:
-            break
-        }
+    // switch (e.target.className) {
+    //     case "next-btn":
+    //         changeSlide(1)
+    //         break
+    //     case "fa-solid fa-chevron-right":
+    //         changeSlide(1)
+    //         break
+    //     case "prev-btn":
+    //         changeSlide(-1)
+    //         break
+    //     case "fa-solid fa-chevron-left":
+    //         changeSlide(-1)
+    //         break
+    //     case "line one":
+    //         currentSlide(1)
+    //         break
+    //     case "line two":
+    //         currentSlide(2)
+    //         break
+    //     case "line three":
+    //         currentSlide(3)
+    //         break
+    //     default:
+    //         break
+    //     }
+
+
+    const sliderBtn = e.target.className        
+    if (sliderBtn == "next-btn" || sliderBtn == "fa-solid fa-chevron-right") {
+        changeSlide(1)
+    } else if (sliderBtn == "prev-btn" || sliderBtn == "fa-solid fa-chevron-left") {
+        changeSlide(-1)
+    } else if (sliderBtn == "line one") {
+        currentSlide(1)
+    } else if (sliderBtn == "line two") {
+        currentSlide(2)
+    } else if (sliderBtn == "line three") {
+        currentSlide(3)
+    }
+
 })
     
     let slideIndex = 1
