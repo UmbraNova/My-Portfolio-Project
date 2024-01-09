@@ -4,6 +4,7 @@
 let contactEl = ""
 let menuCheckEl = ""
 
+// TODO: sometimes it gives an error in netlify servers.
 
 // setTimout to load it after everything else
 setTimeout(function() {
@@ -14,7 +15,6 @@ setTimeout(function() {
 
 document.addEventListener("click", function(e){
     if (e.target.tagName=="A") {
-        // TODO: fix netlify error here
         menuCheckEl.checked = false
     }
 
@@ -35,7 +35,6 @@ function clickScaleEffect(elem) {
 }
 
 
-// TODO: fix netlify error here
 function openMobileMenuScrollLock() {
     if (menuCheckEl.checked) {
         document.body.style.overflow = "hidden"
@@ -43,7 +42,6 @@ function openMobileMenuScrollLock() {
         document.body.style.overflow = "scroll"
     }
 }
-
 
 function openAndCloseContact(eTarget) {
     if (eTarget.className.split(" ")[0]=="contact-me-btn") {
