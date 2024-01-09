@@ -27,7 +27,6 @@ document.addEventListener("click", function(e){
     }
 
     if (e.target.className.split(" ")[0]=="contact-me-btn") {
-        location.reload()
         contactEl.style.display = "flex"
         document.body.style.overflow = "hidden"
     } else if (e.target.id=="exit-btn" || e.target.id=="contact-el") {
