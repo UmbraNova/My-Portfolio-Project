@@ -24,6 +24,7 @@ setTimeout(function() {
 document.addEventListener("click", function(e){
     if (e.target.tagName=="A") {
         menuCheckEl.checked = false
+        document.body.style.overflow = "scroll"
     }
 
     if (e.target.className.split(" ")[0]=="contact-me-btn") {
