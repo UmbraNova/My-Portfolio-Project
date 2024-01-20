@@ -16,11 +16,17 @@ document.addEventListener("click", function(e) {
 })
     
 let slideIndex = 0
-let isBtnClicked = false
+let wasBtnClicked = false
+let sliderTimeout;
 
 function showSlides(index=slideIndex += 1, btnClicked=true) {
     // btnClicked => autoSlider is sending false, when user clicks it defaults to true
-    isBtnClicked = btnClicked
+    if (btnClicked) {
+        clearTimeout(sliderTimeout)
+        startSliderAfterClick()
+    }
+
+    wasBtnClicked = btnClicked
 
     const slides = document.getElementsByClassName("slides")
     const lines = document.getElementsByClassName("line")
@@ -39,29 +45,22 @@ function showSlides(index=slideIndex += 1, btnClicked=true) {
 
     slides[slideIndex - 1].style.display = "block"
     lines[slideIndex - 1].className += " active"
+}
 
-    if (btnClicked) {
-        resetIsBtnClicked()
-    }
+
+function autoSlider() {
+    sliderTimeout = window.setTimeout(() => {
+        showSlides(slideIndex += 1, false)
+        autoSlider()
+    }, 2500)
+}
+
+function startSliderAfterClick() {
+    autoSlider()
 }
 
 showSlides()
-autoSlider()
 
-function resetIsBtnClicked() {
-    setTimeout(() => {
-        isBtnClicked = false
-        autoSlider()
-    }, 3000)
+if (!wasBtnClicked) {
+    autoSlider()
 }
-
-function autoSlider() {
-    showSlides(slideIndex += 1, false)
-    setTimeout(() => {
-        if (!isBtnClicked) {
-            console.log(isBtnClicked)
-            autoSlider()
-        }
-    }, 1500)
-}
-
