@@ -15,9 +15,13 @@ document.addEventListener("click", function(e) {
 
 })
     
-let slideIndex = 1
-    
-function showSlides(index=slideIndex += 1) {
+let slideIndex = 0
+let isBtnClicked = false
+
+function showSlides(index=slideIndex += 1, btnClicked=true) {
+    // btnClicked => autoSlider is sending false, when user clicks it defaults to true
+    isBtnClicked = btnClicked
+
     const slides = document.getElementsByClassName("slides")
     const lines = document.getElementsByClassName("line")
     let i
@@ -35,7 +39,29 @@ function showSlides(index=slideIndex += 1) {
 
     slides[slideIndex - 1].style.display = "block"
     lines[slideIndex - 1].className += " active"
+
+    if (btnClicked) {
+        resetIsBtnClicked()
+    }
 }
 
 showSlides()
+autoSlider()
+
+function resetIsBtnClicked() {
+    setTimeout(() => {
+        isBtnClicked = false
+        autoSlider()
+    }, 3000)
+}
+
+function autoSlider() {
+    showSlides(slideIndex += 1, false)
+    setTimeout(() => {
+        if (!isBtnClicked) {
+            console.log(isBtnClicked)
+            autoSlider()
+        }
+    }, 1500)
+}
 
