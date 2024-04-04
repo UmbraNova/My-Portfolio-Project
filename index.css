@@ -22,6 +22,7 @@ html {
     font-family: 'Rubik', sans-serif;
     color: var(--font-color-two);
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -269,6 +270,7 @@ nav ul a.active:hover {
 
 .prev-btn, .next-btn {
     border-radius: 0 var(--radius) var(--radius) 0;
+    text-shadow: 0px 0px 4px #000000;
     transition: all 0.35s;
     align-items: center;
     position: absolute;
@@ -280,7 +282,7 @@ nav ul a.active:hover {
     height: 91%;
     width: auto;
     top: 9%;
-    color: #ffffff50;
+    color: #ffffffe8;
 }
 
 .next-btn {
